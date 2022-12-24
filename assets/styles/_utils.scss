@@ -1,0 +1,10 @@
+.upp {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  max-width: calc(1410px + var(--wrapper-gap) * 2);
+  padding-inline: var(--wrapper-gap);
+  margin-inline: auto;
+  width: 100%;
+}
