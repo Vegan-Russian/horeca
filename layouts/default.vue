@@ -1,22 +1,16 @@
 <template>
   <div class="default-layout">
     <the-header />
-    <slot />
-
-    <div class="wrapper default-layout__links">
-      <slot name="links"> </slot>
+    <div class="default-layout__content relative">
+      <slot></slot>
     </div>
     <the-footer />
   </div>
 </template>
-
-<style lang="scss">
+<style lang="scss" scoped>
 .default-layout {
-  &__links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 92px;
-    gap: 32px;
+  &__content {
+    padding-top: var(--layout-content-offset);
   }
 }
 </style>

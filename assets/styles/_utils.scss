@@ -8,3 +8,50 @@
   margin-inline: auto;
   width: 100%;
 }
+
+.accent-text {
+  color: var(--title-color);
+}
+
+.relative {
+  position: relative;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+.scroll-visible {
+  overflow: visible;
+}
+
+@include media("md", "min") {
+  .show-for-md {
+    display: none !important;
+  }
+}
+@include media("md") {
+  .hide-for-md {
+    display: none !important;
+  }
+}
+@include media("sm", "min") {
+  .show-for-sm {
+    display: none !important;
+  }
+}
+@include media("sm") {
+  .hide-for-sm {
+    display: none !important;
+  }
+}
+@include media("xxs", "min") {
+  .show-for-xxs {
+    display: none !important;
+  }
+}
+@include media("xxs") {
+  .hide-for-xxs {
+    display: none !important;
+  }
+}
