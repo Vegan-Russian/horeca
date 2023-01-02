@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Deployment
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[click here](https://resplendent-rolypoly-00d6ba.netlify.app/)
 
 ## Setup
 
