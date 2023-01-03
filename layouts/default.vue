@@ -2,7 +2,7 @@
   <div class="default-layout">
     <the-header />
     <div class="default-layout__content relative">
-      <slot></slot>
+      <slot />
     </div>
     <the-footer />
   </div>

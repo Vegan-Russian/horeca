@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import svgLoader from "vite-svg-loader";
+import eslintPlugin from "vite-plugin-eslint";
 
 export default defineNuxtConfig({
   css: ["@/assets/styles/index.scss"],
@@ -15,6 +16,7 @@ export default defineNuxtConfig({
       svgLoader({
         defaultImport: "component",
       }),
+      eslintPlugin(),
     ],
   },
 });

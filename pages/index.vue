@@ -2,32 +2,48 @@
   <div>
     <main class="main-page">
       <section class="main-page__promo">
-        <div class="main-page__promo-bg"></div>
+        <div class="main-page__promo-bg" />
         <div class="wrapper">
           <div class="main-page__promo-content">
-            <h1>Веганские позиции в вашем <span class="accent-part">ресторане</span></h1>
+            <h1>
+              Веганские позиции в вашем
+              <span class="accent-part">ресторане</span>
+            </h1>
             <p>
-              Наша цель — сделать так, чтобы веганские опции в кафе и ресторанах стали доступнее.
+              Наша цель — сделать так, чтобы веганские опции в кафе и ресторанах
+              стали доступнее.
               <br />
-              Для этого мы создали справочник ингридиентов и делимся списком проверенных поставщиков растительных альтернатив
+              Для этого мы создали справочник ингридиентов и делимся списком
+              проверенных поставщиков растительных альтернатив
             </p>
           </div>
         </div>
       </section>
       <div class="wrapper">
         <section class="main-page__section">
-          <div class="main-page__section-content main-page__section-content--leading">
+          <div
+            class="main-page__section-content main-page__section-content--leading"
+          >
             <h2>Кто такие веганы?</h2>
             <p>
-              <span class="accent-text">Веганы</span> — это люди, которые отказались от использования животных в своей жизни. Мы не употребляем
-              никакие продукты, полученные от животных.
+              <span class="accent-text">Веганы</span> — это люди, которые
+              отказались от использования животных в своей жизни. Мы не
+              употребляем никакие продукты, полученные от животных.
             </p>
             <p>
-              Вегетарианская диета произвольно исключает лишь некоторые животные продукты.
-              <span class="accent-text">Отличие веганов от вегерианцев в том, что первые против любого использования животных.</span>
+              Вегетарианская диета произвольно исключает лишь некоторые животные
+              продукты.
+              <span class="accent-text"
+                >Отличие веганов от вегерианцев в том, что первые против любого
+                использования животных.</span
+              >
             </p>
           </div>
-          <picture><img class="main-page__arc-radius main-page__arc-radius--leading" src="~/assets/images/who-is-vegan.jpg" /></picture>
+          <picture
+            ><img
+              class="main-page__arc-radius main-page__arc-radius--leading"
+              src="~/assets/images/who-is-vegan.jpg"
+          /></picture>
         </section>
         <section class="main-page__section main-page__section--bordered">
           <div class="main-page__title-and-pic-block">
@@ -36,35 +52,65 @@
               веганы?
             </h2>
 
-            <picture><img class="main-page__arc-right" src="~/assets/images/what-vegan-eats.jpg" /></picture>
+            <picture
+              ><img
+                class="main-page__arc-right"
+                src="~/assets/images/what-vegan-eats.jpg"
+            /></picture>
           </div>
           <div class="main-page__section-content">
-            <h4>Мы едим точно такую же еду, что и невеганы, лишь заменяя ингредиенты на веганские</h4>
+            <h4>
+              Мы едим точно такую же еду, что и невеганы, лишь заменяя
+              ингредиенты на веганские
+            </h4>
             <p>
-              Веганские опции могут вписаться в любое заведение. В бургерной вместо мясной котлеты — веганская мясная котлета, вместо обычного
-              майонеза — соус без яиц, вместо молочного сыра — растительный сыр. В пиццерии сыр заменяется на растительный сыр, а как протеиновые
-              топпинги можно использовать веганскую колбасу, сейтан, соевое мясо.
+              Веганские опции могут вписаться в любое заведение. В бургерной
+              вместо мясной котлеты — веганская мясная котлета, вместо обычного
+              майонеза — соус без яиц, вместо молочного сыра — растительный сыр.
+              В пиццерии сыр заменяется на растительный сыр, а как протеиновые
+              топпинги можно использовать веганскую колбасу, сейтан, соевое
+              мясо.
             </p>
           </div>
         </section>
         <section class="main-page__section main-page__section--bordered">
           <div class="main-page__section-content">
             <h2>Есть ли спрос?</h2>
-            <h4 class="main-page__subtitle">92% опрошенных считают, что веганских опций недостаточно*</h4>
+            <h4 class="main-page__subtitle">
+              92% опрошенных считают, что веганских опций недостаточно*
+            </h4>
             <p>
-              На данный момент спрос на растительные опции сильно опережает предложение. Зачастую наши единственные опции в кафе — картошка или
-              овощной салат. А это далеко не та полноценная и вкусная еда, которую нам хочется заказывать.
+              На данный момент спрос на растительные опции сильно опережает
+              предложение. Зачастую наши единственные опции в кафе — картошка
+              или овощной салат. А это далеко не та полноценная и вкусная еда,
+              которую нам хочется заказывать.
             </p>
-            <p>* Мы провели инстаграм-опрос “Хватает ли вам веганских опций в общепите?”</p>
+            <p>
+              * Мы провели инстаграм-опрос “Хватает ли вам веганских опций в
+              общепите?”
+            </p>
           </div>
-          <picture><img class="main-page__arc-radius" src="~/assets/images/is-there-request.jpg" /></picture>
+          <picture
+            ><img
+              class="main-page__arc-radius"
+              src="~/assets/images/is-there-request.jpg"
+          /></picture>
         </section>
-        <section class="main-page__section main-page__section--heading main-page__section--bordered">
-          <picture class="show-for-sm"><img class="main-page__arc-left" src="~/assets/images/how-to-create-vegan-menu.jpg" /></picture>
+        <section
+          class="main-page__section main-page__section--heading main-page__section--bordered"
+        >
+          <picture class="show-for-sm"
+            ><img
+              class="main-page__arc-left"
+              src="~/assets/images/how-to-create-vegan-menu.jpg"
+          /></picture>
           <div class="main-page__options-content">
             <div class="main-page__section-heading-content">
               <h2>Не мало <br />ли веганов?</h2>
-              <p>Веганские опции подходят всем и их заказывают далеко не одни только веганы. Ваши растительные блюда будут заказывать:</p>
+              <p>
+                Веганские опции подходят всем и их заказывают далеко не одни
+                только веганы. Ваши растительные блюда будут заказывать:
+              </p>
             </div>
             <div class="main-page__section main-page__section--content">
               <ul class="main-page__list">
@@ -84,7 +130,10 @@
         </section>
         <section class="main-page__section main-page__section--how-to">
           <div class="hide-for-sm">
-            <img class="main-page__arc-left" src="~/assets/images/how-to-create-vegan-menu.jpg" />
+            <img
+              class="main-page__arc-left"
+              src="~/assets/images/how-to-create-vegan-menu.jpg"
+            />
           </div>
           <div class="main-page__section-content">
             <h2>
@@ -94,7 +143,11 @@
           </div>
         </section>
         <section class="main-page__rules">
-          <the-sheet v-for="(rule, index) in createMenuRules" :key="index" class="main-page__rule rule">
+          <the-sheet
+            v-for="(rule, index) in createMenuRules"
+            :key="index"
+            class="main-page__rule rule"
+          >
             <div class="rule__num">{{ index + 1 }}.</div>
             <div class="rule__content">
               <h4>{{ rule.title }}</h4>
@@ -108,21 +161,37 @@
       </div>
     </main>
     <div class="wrapper common-links">
-      <the-link :to="{ name: 'guide' }">Открыть справочник по веганским блюдам</the-link>
-      <the-link :to="{ name: 'suppliers' }">Посмотреть поставщиков</the-link>
+      <the-link :to="{ name: 'guide' }">
+        Открыть справочник по веганским блюдам
+      </the-link>
+      <the-link :to="{ name: 'suppliers' }"> Посмотреть поставщиков </the-link>
     </div>
-    <img src="~/assets/images/first-radial.svg?url" class="first-radial hide-for-xxs" alt="" />
-    <img src="~/assets/images/second-radial.svg?url" class="second-radial hide-for-xxs" alt="" />
-    <img src="~/assets/images/third-radial.svg?url" class="third-radial hide-for-xxs" alt="" />
+    <img
+      src="~/assets/images/first-radial.svg?url"
+      class="first-radial hide-for-xxs"
+      alt=""
+    />
+    <img
+      src="~/assets/images/second-radial.svg?url"
+      class="second-radial hide-for-xxs"
+      alt=""
+    />
+    <img
+      src="~/assets/images/third-radial.svg?url"
+      class="third-radial hide-for-xxs"
+      alt=""
+    />
   </div>
 </template>
 
 <script setup>
 useHead({
-  titleTemplate: "HoReCa - главная страница",
+  titleTemplate: 'HoReCa - главная страница',
 });
 
-const { data: createMenuRules } = await useAsyncData("rules", () => $fetch("/api/rules"));
+const { data: createMenuRules } = await useAsyncData('rules', () =>
+  $fetch('/api/rules'),
+);
 </script>
 
 <style lang="scss" scoped>
@@ -238,7 +307,7 @@ const { data: createMenuRules } = await useAsyncData("rules", () => $fetch("/api
     align-items: end;
   }
 
-  @include media("md") {
+  @include media('md') {
     &__section {
       margin-top: 110px;
       &--content {
@@ -247,7 +316,7 @@ const { data: createMenuRules } = await useAsyncData("rules", () => $fetch("/api
     }
   }
 
-  @include media("sm") {
+  @include media('sm') {
     &__promo {
       height: auto;
       padding-block: 60px;
@@ -332,12 +401,12 @@ const { data: createMenuRules } = await useAsyncData("rules", () => $fetch("/api
     }
   }
 
-  @include media("xxs") {
+  @include media('xxs') {
     &__section:not(&__section--content) {
       margin-top: 60px;
     }
   }
-  @include media("xs") {
+  @include media('xs') {
     &__section {
       &--content {
         max-width: 80%;
@@ -371,16 +440,16 @@ const { data: createMenuRules } = await useAsyncData("rules", () => $fetch("/api
     border-radius: 320px 320px 0px 0px;
   }
 
-  @include media("md") {
+  @include media('md') {
     padding: 24px;
     gap: 24px;
   }
 
-  @include media("sm") {
+  @include media('sm') {
     display: grid;
     grid-template-areas:
-      "num text"
-      "img img";
+      'num text'
+      'img img';
     grid-template-columns: auto 1fr;
     gap: 14px;
 
@@ -409,7 +478,7 @@ const { data: createMenuRules } = await useAsyncData("rules", () => $fetch("/api
     }
   }
 
-  @include media("xxs") {
+  @include media('xxs') {
     padding: 20px;
     gap: 10px;
     &__num {

@@ -1,13 +1,13 @@
 <template>
   <nuxt-link :to="to" class="link">
-    <slot></slot>
+    <slot />
 
     <link-arrow class="link__arrow" viewBox="0 0 20 20" />
   </nuxt-link>
 </template>
 <script lang="ts" setup>
-import LinkArrow from "~/assets/images/link-arrow.svg?component";
-import { RouteLocationRaw } from "vue-router";
+import LinkArrow from '~/assets/images/link-arrow.svg?component';
+import { RouteLocationRaw } from 'vue-router';
 
 defineProps<{ to: string | RouteLocationRaw }>();
 </script>
@@ -31,10 +31,10 @@ defineProps<{ to: string | RouteLocationRaw }>();
     }
   }
 
-  @include media("md") {
+  @include media('md') {
     font-size: 32px;
   }
-  @include media("sm") {
+  @include media('sm') {
     font-size: 24px;
     &__arrow {
       height: 16px;
@@ -42,7 +42,7 @@ defineProps<{ to: string | RouteLocationRaw }>();
       margin-left: 8px;
     }
   }
-  @include media("xxs") {
+  @include media('xxs') {
     font-size: 18px;
     &__arrow {
       height: 10px;

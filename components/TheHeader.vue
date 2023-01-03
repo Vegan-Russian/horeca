@@ -1,18 +1,35 @@
 <template>
   <header class="header">
     <div class="header__wrapper wrapper">
-      <nuxt-link href="/" class="header__logo-link" @click="isMenuActive = false">Vegan HoReCA</nuxt-link>
+      <nuxt-link
+        href="/"
+        class="header__logo-link"
+        @click="isMenuActive = false"
+      >
+        Vegan HoReCA
+      </nuxt-link>
       <nav class="header__navigation" :class="{ active: isMenuActive }">
         <ul class="header__links">
           <li v-for="{ link, text } in menuItems" :key="link">
-            <nuxt-link :to="link" class="header__link upp" @click="isMenuActive = false">{{ text }}</nuxt-link>
+            <nuxt-link
+              :to="link"
+              class="header__link upp"
+              @click="isMenuActive = false"
+            >
+              {{ text }}
+            </nuxt-link>
           </li>
         </ul>
       </nav>
-      <button type="button" class="burger show-for-md" @click="isMenuActive = !isMenuActive" :class="{ active: isMenuActive }">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
+      <button
+        type="button"
+        class="burger show-for-md"
+        :class="{ active: isMenuActive }"
+        @click="isMenuActive = !isMenuActive"
+      >
+        <span class="burger__line" />
+        <span class="burger__line" />
+        <span class="burger__line" />
       </button>
     </div>
   </header>
@@ -20,10 +37,10 @@
 
 <script setup>
 const menuItems = [
-  { link: "/guide", text: "Справочник" },
-  { link: "/suppliers", text: "Поставщики" },
-  { link: "/about", text: "О нас" },
-  { link: "/contacts", text: "Контакты" },
+  { link: '/guide', text: 'Справочник' },
+  { link: '/suppliers', text: 'Поставщики' },
+  { link: '/about', text: 'О нас' },
+  { link: '/contacts', text: 'Контакты' },
 ];
 
 const isMenuActive = ref(false);
@@ -67,7 +84,7 @@ watch(isMenuActive, () => {
     font-size: 22px;
     position: relative;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 100%;
       left: 0;
@@ -84,7 +101,7 @@ watch(isMenuActive, () => {
       }
     }
   }
-  @include media("md") {
+  @include media('md') {
     &__logo-link {
       position: relative;
       z-index: 10;
@@ -114,6 +131,17 @@ watch(isMenuActive, () => {
       line-height: 45px;
     }
   }
+
+  @include media('sm') {
+    &__logo-link {
+      font-size: 28px;
+    }
+  }
+  @include media('xs') {
+    &__logo-link {
+      font-size: 18px;
+    }
+  }
 }
 
 .burger {
@@ -125,7 +153,7 @@ watch(isMenuActive, () => {
     opacity: 0.7;
   }
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     inset: -5px -10px -10px;
   }
@@ -162,9 +190,4 @@ watch(isMenuActive, () => {
     }
   }
 }
-
-// @include media("md") {
-// }
-
-// @include media('') {}
 </style>

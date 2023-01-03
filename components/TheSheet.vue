@@ -1,6 +1,6 @@
 <template>
   <div class="sheet">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 <script lang="ts" setup>
@@ -11,10 +11,10 @@ interface Props {
   radius?: string;
 }
 withDefaults(defineProps<Props>(), {
-  padding: "40px",
-  mdPadding: "",
-  smPadding: "",
-  radius: "",
+  padding: '40px',
+  mdPadding: '',
+  smPadding: '',
+  radius: '',
 });
 </script>
 

@@ -1,9 +1,16 @@
 <template>
   <footer class="footer">
-    <nuxt-link :to="{ name: 'index' }" class="footer__main-link">Vegan HoReCA</nuxt-link>
+    <nuxt-link :to="{ name: 'index' }" class="footer__main-link">
+      Vegan HoReCA
+    </nuxt-link>
     <!-- TODO: Уточнить мыло -->
     <a href="mailto:hello@veganrussian.ru" class="footer__link">Написать нам</a>
-    <a href="https://www.instagram.com/vegan.russian/" target="_blank" class="footer__link">Наш instagram</a>
+    <a
+      href="https://www.instagram.com/vegan.russian/"
+      target="_blank"
+      class="footer__link"
+      >Наш instagram</a
+    >
   </footer>
 </template>
 
@@ -37,11 +44,11 @@
     }
   }
 
-  @include media("md") {
+  @include media('md') {
     padding-block: 110px 80px;
   }
 
-  @include media("sm") {
+  @include media('sm') {
     padding-block: 90px 60px;
     gap: 24px;
     &__main-link {
@@ -54,7 +61,7 @@
     }
   }
 
-  @include media("xxs") {
+  @include media('xxs') {
     gap: 18px;
     &__main-link {
       font-size: 18px;
