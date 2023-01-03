@@ -1,5 +1,5 @@
 <template>
-  <div>О нас</div>
+  <div class="page">О нас</div>
 </template>
 <script setup>
 useHead({

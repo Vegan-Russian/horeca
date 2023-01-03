@@ -29,32 +29,32 @@
   overflow: visible;
 }
 
-@include media("md", "min") {
+@include media('md', 'min') {
   .show-for-md {
     display: none !important;
   }
 }
-@include media("md") {
+@include media('md') {
   .hide-for-md {
     display: none !important;
   }
 }
-@include media("sm", "min") {
+@include media('sm', 'min') {
   .show-for-sm {
     display: none !important;
   }
 }
-@include media("sm") {
+@include media('sm') {
   .hide-for-sm {
     display: none !important;
   }
 }
-@include media("xxs", "min") {
+@include media('xxs', 'min') {
   .show-for-xxs {
     display: none !important;
   }
 }
-@include media("xxs") {
+@include media('xxs') {
   .hide-for-xxs {
     display: none !important;
   }

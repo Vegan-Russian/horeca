@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main class="main-page">
+    <main class="main-page page">
       <section class="main-page__promo">
         <div class="main-page__promo-bg" />
         <div class="wrapper">

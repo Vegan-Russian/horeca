@@ -1,12 +1,12 @@
 $sizes: (
-  "lg": 1680px,
-  "md": 1240px,
-  "sm": 1024px,
-  "xxs": 767px,
-  "xs": 599px,
+  'lg': 1680px,
+  'md': 1240px,
+  'sm': 1024px,
+  'xxs': 767px,
+  'xs': 599px,
 );
 
-@mixin media($size, $range: "max") {
+@mixin media($size, $range: 'max') {
   @if map-has-key($sizes, $size) {
     $size-value: map-get($sizes, $size);
     @media only screen and (#{$range}-width: $size-value) {

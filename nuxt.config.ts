@@ -1,9 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import svgLoader from "vite-svg-loader";
-import eslintPlugin from "vite-plugin-eslint";
+import svgLoader from 'vite-svg-loader';
+import eslintPlugin from 'vite-plugin-eslint';
 
 export default defineNuxtConfig({
-  css: ["@/assets/styles/index.scss"],
+  css: ['@/assets/styles/index.scss'],
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
   vite: {
     css: {
       preprocessorOptions: {
@@ -14,7 +17,7 @@ export default defineNuxtConfig({
     },
     plugins: [
       svgLoader({
-        defaultImport: "component",
+        defaultImport: 'component',
       }),
       eslintPlugin(),
     ],

@@ -1,7 +1,7 @@
 :root {
-  --font-logo: "Mulish", sans-serif;
-  --font-title: "Forum", cursive;
-  --font-text: "Raleway", sans-serif;
+  --font-logo: 'Mulish', sans-serif;
+  --font-title: 'Forum', cursive;
+  --font-text: 'Raleway', sans-serif;
 
   --wrapper-gap: 31px;
   --layout-content-offset: 160px;
@@ -9,7 +9,7 @@
   --text-color: #252421;
   --title-color: #642400;
 
-  @include media("sm") {
+  @include media('sm') {
     --layout-content-offset: 100px;
   }
 }

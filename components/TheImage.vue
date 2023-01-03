@@ -18,11 +18,11 @@ defineProps<{ src: string; bordered: boolean }>();
 
 <style lang="scss" scoped>
 .image {
+  font-size: 24px;
+  line-height: 1.46;
   &__caption {
     color: #aea9a9;
     margin-top: 16px;
-    font-size: 24px;
-    line-height: 1.46;
     &::v-deep(a) {
       &:hover {
         text-decoration: underline;
@@ -34,6 +34,28 @@ defineProps<{ src: string; bordered: boolean }>();
     display: block;
     &--bordered {
       outline: 0.09375rem solid #000000; // 1.5px
+    }
+  }
+
+  @include media('sm') {
+    font-size: 20px;
+    &__caption {
+      margin-top: 12px;
+    }
+  }
+
+  @include media('xxs') {
+    font-size: 16px;
+    line-height: 1;
+    &__caption {
+      margin-top: 8px;
+    }
+  }
+
+  @include media('xs') {
+    font-size: 12px;
+    &__caption {
+      margin-top: 6px;
     }
   }
 }

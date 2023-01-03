@@ -94,11 +94,14 @@ watch(isMenuActive, () => {
       transform: scaleX(0);
       background-color: currentColor;
     }
-    &:hover,
-    &.router-link-active {
+    &:hover {
       &::after {
         transform: scaleX(1);
       }
+    }
+    &.router-link-active {
+      pointer-events: none;
+      color: var(--title-color);
     }
   }
   @include media('md') {
