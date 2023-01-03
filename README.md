@@ -1,6 +1,6 @@
 # Deployment
 
-[click here](https://resplendent-rolypoly-00d6ba.netlify.app/)
+[click here](https://vegan-horeca.netlify.app/)
 
 ## Setup
 
