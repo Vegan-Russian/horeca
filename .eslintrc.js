@@ -36,6 +36,7 @@ module.exports = {
         alphabetical: false,
       },
     ],
+    'vue/no-v-html': 'off',
   },
   overrides: [
     {
