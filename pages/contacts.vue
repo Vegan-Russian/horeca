@@ -7,15 +7,14 @@
         <a href="mailto:hello@veganrussian.ru">hello@veganrussian.ru</a>.
       </p>
     </div>
+    <teleport to="body">
+      <img
+        src="~/assets/images/first-radial.svg?url"
+        class="radial hide-for-xxs"
+        alt=""
+      />
+    </teleport>
   </div>
-
-  <teleport to="body">
-    <img
-      src="~/assets/images/first-radial.svg?url"
-      class="radial hide-for-xxs"
-      alt=""
-    />
-  </teleport>
 </template>
 <script setup>
 useHead({
