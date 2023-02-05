@@ -15,6 +15,10 @@ type Options = {
   name: string;
   description?: string;
   content?: Content[];
+  images: {
+    normal: string;
+    small: string;
+  };
 };
 
 const options: Options[] = [
@@ -375,7 +379,7 @@ const options: Options[] = [
           {
             type: 'text',
             content:
-              ' Желатин не является веганским продуктом, поскольку производится из хрящей и соединительных тканей животных. Желатин успешно заменяют растительными загустителями, стабилизаторами и желеобразующими веществами — агар-агаром (e406, полисахариды из водорослей) или пектинами (e440, полисахариды из фруктов), в зависимости от задачи рецепта. Таким образом, любое блюдо, в котором необходим загуститель, стабилизатор и желеобразующий элемент, можно исполнить в веганском варианте.',
+              'Желатин не является веганским продуктом, поскольку производится из хрящей и соединительных тканей животных. Желатин успешно заменяют растительными загустителями, стабилизаторами и желеобразующими веществами — агар-агаром (e406, полисахариды из водорослей) или пектинами (e440, полисахариды из фруктов), в зависимости от задачи рецепта. Таким образом, любое блюдо, в котором необходим загуститель, стабилизатор и желеобразующий элемент, можно исполнить в веганском варианте.',
           },
           {
             type: 'text',
@@ -390,22 +394,94 @@ const options: Options[] = [
         ],
       },
     ],
+    images: {
+      normal: '/images/guide/main/kak-zamenit-zhivotnye-produkty.webp',
+      small: '/images/guide/main/kak-zamenit-zhivotnye-produkty-sm.webp',
+    },
   },
-  { id: 'zakuski', name: 'Закуски' },
-  { id: 'zavtraki', name: 'Завтраки' },
-  { id: 'osnovnye-bliuda', name: 'Основные блюда' },
-  { id: 'deserty', name: 'Десерты' },
-  { id: 'vypechka', name: 'Выпечка' },
-  { id: 'pripravy', name: 'Приправы' },
-  { id: 'sousy', name: 'Соусы' },
-  { id: 'komplimenty', name: 'Комплименты' },
-  { id: 'alkogol', name: 'Алкоголь' },
+  {
+    id: 'zakuski',
+    name: 'Закуски',
+    images: {
+      normal: '/images/guide/main/zakuski.webp',
+      small: '/images/guide/main/zakuski-sm.webp',
+    },
+  },
+  {
+    id: 'zavtraki',
+    name: 'Завтраки',
+    images: {
+      normal: '/images/guide/main/zavtraki.webp',
+      small: '/images/guide/main/zavtraki-sm.webp',
+    },
+  },
+  {
+    id: 'osnovnye-bliuda',
+    name: 'Основные блюда',
+    images: {
+      normal: '/images/guide/main/osnovnye-bliuda.webp',
+      small: '/images/guide/main/osnovnye-bliuda-sm.webp',
+    },
+  },
+  {
+    id: 'deserty',
+    name: 'Десерты',
+    images: {
+      normal: '/images/guide/main/deserty.webp',
+      small: '/images/guide/main/deserty-sm.webp',
+    },
+  },
+  {
+    id: 'vypechka',
+    name: 'Выпечка',
+    images: {
+      normal: '/images/guide/main/vypechka.webp',
+      small: '/images/guide/main/vypechka-sm.webp',
+    },
+  },
+  {
+    id: 'pripravy',
+    name: 'Приправы',
+    images: {
+      normal: '/images/guide/main/pripravy.webp',
+      small: '/images/guide/main/pripravy-sm.webp',
+    },
+  },
+  {
+    id: 'sousy',
+    name: 'Соусы',
+    images: {
+      normal: '/images/guide/main/sousy.webp',
+      small: '/images/guide/main/sousy-sm.webp',
+    },
+  },
+  {
+    id: 'komplimenty',
+    name: 'Комплименты',
+    images: {
+      normal: '/images/guide/main/komplimenty.webp',
+      small: '/images/guide/main/komplimenty-sm.webp',
+    },
+  },
+  {
+    id: 'alkogol',
+    name: 'Алкоголь',
+    images: {
+      normal: '/images/guide/main/alkogol.webp',
+      small: '/images/guide/main/alkogol-sm.webp',
+    },
+  },
 ];
 
 export default defineEventHandler((event) => {
   const query = getQuery(event);
   if (query.id) {
-    const option = options.find((item) => item.id === query.id);
+    const option: Partial<Options> | undefined = options.find(
+      (item) => item.id === query.id,
+    );
+    if (option) {
+      delete option.images;
+    }
     return {
       response: option,
       success: !!option,
@@ -413,7 +489,7 @@ export default defineEventHandler((event) => {
   }
 
   return {
-    response: options.map(({ id, name }) => ({ id, name })),
+    response: options.map(({ id, name, images }) => ({ id, name, images })),
     success: true,
   };
 });
