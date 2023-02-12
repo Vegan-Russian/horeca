@@ -14,7 +14,7 @@
           class="term"
           :style="{ '--image-sm': `url(${term.images?.small})` }"
         >
-          <img :src="getImage(term)" alt="" class="term__img" />
+          <img :src="term.images.normal" alt="" class="term__img" />
           <h4 v-html="term.name"></h4>
           <nuxt-link class="term__link" :to="`guide/${term.id}`"></nuxt-link>
         </article>
@@ -33,22 +33,7 @@ useHead({
   titleTemplate: 'HoReCa - о нас',
 });
 
-// const articles = ref();
-
-// onMounted(async () => {
 const { data: articles } = await useFetch('/api/articles');
-//   'articles',
-//   () => $fetch(''),
-//   // { pick: ['name', 'images', 'id'] },
-// );
-
-//   articles.value = data.value?.default.response;
-// });
-
-// const articles = computed(() => data.value.response);
-
-const getImage = (item?: { images: { normal: string; small: string } }) =>
-  item?.images?.normal;
 </script>
 
 <style lang="scss">
@@ -62,7 +47,7 @@ const getImage = (item?: { images: { normal: string; small: string } }) =>
     gap: 34px 46px;
   }
 
-  @include media('sm') {
+  @include media('xxs') {
     &__terms {
       display: flex;
       flex-direction: column;
@@ -111,7 +96,7 @@ const getImage = (item?: { images: { normal: string; small: string } }) =>
     }
   }
 
-  @include media('sm') {
+  @include media('xxs') {
     position: relative;
     overflow: hidden;
     border-color: #b87c5a;
@@ -142,6 +127,11 @@ const getImage = (item?: { images: { normal: string; small: string } }) =>
     }
     &:last-child {
       border-radius: 0 0 20px 20px;
+    }
+
+    h4 {
+      font-size: 22px;
+      line-height: 20px;
     }
   }
 }

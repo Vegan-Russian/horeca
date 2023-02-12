@@ -1,6 +1,6 @@
 <template>
   <form ref="form" class="search" @submit.prevent="searchTerm">
-    <link-magnifier class="search__icon" />
+    <div v-html="LinkMagnifier"></div>
     <input
       v-model="localValue"
       type="text"
@@ -8,7 +8,13 @@
       class="search__field"
       @focus="isFocused = true"
     />
-    <the-button type="submit" small class="search__btn">Найти</the-button>
+    <the-button
+      type="submit"
+      small
+      class="search__btn"
+      :disabled="localValue.length === 0 && isRendered"
+      >Найти</the-button
+    >
     <transition name="list">
       <ul v-show="suggested.length && isFocused" class="search__options">
         <li v-for="(option, idx) in suggested" :key="idx">
@@ -25,7 +31,7 @@
   </form>
 </template>
 <script lang="ts" setup>
-import LinkMagnifier from '~/assets/images/magnifier.svg?component';
+import LinkMagnifier from '~/assets/images/magnifier.svg?raw';
 import { onClickOutside } from '@vueuse/core';
 withDefaults(
   defineProps<{
@@ -39,17 +45,26 @@ withDefaults(
 
 const form = ref<HTMLElement | null>(null);
 
-onClickOutside(form, () => (isFocused.value = false));
+onClickOutside(form, () => {
+  isFocused.value = false;
+  emit('blur');
+});
 
 const localValue = ref('');
 const isFocused = ref(false);
 
-const emit = defineEmits(['search', 'choose']);
+const emit = defineEmits(['search', 'choose', 'blur']);
 
 const searchTerm = () => {
   emit('search', localValue.value);
   isFocused.value = true;
 };
+
+const isRendered = ref(false);
+
+onMounted(() => {
+  isRendered.value = true;
+});
 </script>
 
 <style lang="scss" scoped>
@@ -116,11 +131,46 @@ const searchTerm = () => {
       background-color: darken(#fff4cd, 10);
     }
   }
+
+  @include media('xxs') {
+    height: 58px;
+    border-radius: 8px;
+    padding: 10px 16px;
+    gap: 13px;
+    font-size: 12px;
+
+    &:deep(svg) {
+      height: 28px;
+      width: auto;
+      display: block;
+      rect {
+        fill: #642400;
+      }
+      circle {
+        stroke: #642400;
+      }
+    }
+  }
+
+  &__btn {
+    padding-inline: 13px;
+    border-radius: 6px;
+  }
+
+  &__field {
+    flex-shrink: 1;
+    min-width: 140px;
+  }
+
+  &__choose-option-btn {
+    padding: 8px 14px;
+    font-size: 16px;
+  }
 }
 
 .list-enter-active,
 .list-leave-active {
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   transform: translateY(20px);
 }
 

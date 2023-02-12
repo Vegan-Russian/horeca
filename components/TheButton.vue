@@ -5,7 +5,11 @@
 </template>
 <script lang="ts" setup>
 const props = withDefaults(
-  defineProps<{ small?: boolean; bottomRounded?: boolean; width?: string }>(),
+  defineProps<{
+    small?: boolean;
+    bottomRounded?: boolean;
+    width?: string;
+  }>(),
   {
     width: 'auto',
   },
@@ -43,6 +47,11 @@ const classes = computed(() => ({
 
   &--bottom-rounded {
     border-radius: 0 0 9px 9px;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.7;
   }
 
   @include media('sm') {

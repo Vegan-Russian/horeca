@@ -1,5 +1,7 @@
 import { Article } from '~~/types';
 import kakZamenitZhivotnyeProdukty from './topicsContent/kakZamenitZhivotnyeProdukty';
+import zakuski from './topicsContent/zakuski';
+import zavtraki from './topicsContent/zavtraki';
 
 export const articles: Article[] = [
   {
@@ -16,6 +18,7 @@ export const articles: Article[] = [
   {
     id: 'zakuski',
     name: 'Закуски',
+    content: zakuski,
     images: {
       normal: '/images/guide/main/zakuski.webp',
       small: '/images/guide/main/zakuski-sm.webp',
@@ -24,6 +27,7 @@ export const articles: Article[] = [
   {
     id: 'zavtraki',
     name: 'Завтраки',
+    content: zavtraki,
     images: {
       normal: '/images/guide/main/zavtraki.webp',
       small: '/images/guide/main/zavtraki-sm.webp',

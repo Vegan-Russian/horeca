@@ -32,12 +32,18 @@
               </template>
             </div>
           </article>
-          <img
-            v-else
-            :src="item.content"
-            :alt="item.imageTitle"
-            class="page__section"
-          />
+          <figure v-else>
+            <img
+              :src="item.content"
+              :alt="item.imageTitle"
+              class="page__section"
+            />
+            <figcaption
+              v-if="item.caption"
+              class="term__pic-caption"
+              v-html="item.caption"
+            ></figcaption>
+          </figure>
         </template>
       </template>
       <h1 v-else>Не найдено</h1>
@@ -110,6 +116,14 @@ const pageInfo = computed(() => data.value.response);
     margin-top: 38px;
     margin-left: 1rem;
     line-height: 1.73;
+  }
+
+  &__pic-caption {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 35px;
+    color: #aea9a9;
+    margin-top: 40px;
   }
 }
 </style>

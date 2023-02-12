@@ -7,6 +7,7 @@
       :suggested="foundItems"
       @search="handleSearch"
       @choose="handleChoose"
+      @blur="foundItems = []"
     ></the-search>
     <section v-if="inNothingFound" class="empty">
       <h3 class="empty__title">Нет результатов по вашему запросу</h3>

@@ -1,14 +1,20 @@
-export type ArticleContent = {
-  type: 'block' | 'image';
-  content:
-    | {
-        type: 'title' | 'text' | 'link' | 'list' | 'subtitle';
-        content: string | string[];
-        link?: string;
-      }[]
-    | string;
-  imageTitle?: string;
+export type TextTypeArticleContent = {
+  type: 'block';
+  content: {
+    type: 'title' | 'text' | 'link' | 'list' | 'subtitle';
+    content: string | string[];
+    link?: string;
+  }[];
 };
+
+export type ImageTypeArticleContent = {
+  type: 'image';
+  content: string;
+  imageTitle?: string;
+  caption?: string;
+};
+
+export type ArticleContent = TextTypeArticleContent | ImageTypeArticleContent;
 
 export type Article = {
   id: string;
