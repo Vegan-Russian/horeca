@@ -58,8 +58,8 @@ useHead({
 });
 
 const route = useRoute();
-const { data } = await useAsyncData('terms-groups', () =>
-  $fetch('/api/terms-groups', { query: { id: route.params.id } }),
+const { data } = await useAsyncData('article', () =>
+  $fetch('/api/article', { query: { id: route.params.id } }),
 );
 
 const pageInfo = computed(() => data.value.response);

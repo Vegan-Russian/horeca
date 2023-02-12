@@ -8,11 +8,22 @@
       />
 
       <div class="page__terms">
-        <article v-for="term in terms.response" :key="term.id" class="term">
+        <article
+          v-for="term in articles"
+          :key="term.id"
+          class="term"
+          :style="{ '--image-sm': `url(${term.images?.small})` }"
+        >
           <img :src="getImage(term)" alt="" class="term__img" />
           <h4 v-html="term.name"></h4>
           <nuxt-link class="term__link" :to="`guide/${term.id}`"></nuxt-link>
         </article>
+      </div>
+
+      <div class="common-links">
+        <the-link :to="{ name: 'suppliers' }">
+          Посмотреть поставщиков
+        </the-link>
       </div>
     </div>
   </div>
@@ -21,9 +32,21 @@
 useHead({
   titleTemplate: 'HoReCa - о нас',
 });
-const { data: terms } = await useAsyncData('terms-groups', () =>
-  $fetch('/api/terms-groups'),
-);
+
+// const articles = ref();
+
+// onMounted(async () => {
+const { data: articles } = await useFetch('/api/articles');
+//   'articles',
+//   () => $fetch(''),
+//   // { pick: ['name', 'images', 'id'] },
+// );
+
+//   articles.value = data.value?.default.response;
+// });
+
+// const articles = computed(() => data.value.response);
+
 const getImage = (item?: { images: { normal: string; small: string } }) =>
   item?.images?.normal;
 </script>
@@ -37,6 +60,20 @@ const getImage = (item?: { images: { normal: string; small: string } }) =>
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 34px 46px;
+  }
+
+  @include media('sm') {
+    &__terms {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      border: 1px dashed #9747ff;
+      border-radius: 5px;
+      img {
+        display: none;
+      }
+    }
   }
 }
 
@@ -71,6 +108,40 @@ const getImage = (item?: { images: { normal: string; small: string } }) =>
     .term__img {
       border-radius: 0px 140px 0px 0px;
       margin-bottom: 36px;
+    }
+  }
+
+  @include media('sm') {
+    position: relative;
+    overflow: hidden;
+    border-color: #b87c5a;
+    height: 89px;
+    padding: 24px 21px;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: var(--image-sm);
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.2;
+      transition: opacity 0.2s ease;
+    }
+    &:hover {
+      &::before {
+        opacity: 0.4;
+      }
+    }
+    &:nth-child(n) {
+      border-radius: 0;
+    }
+    &:first-child {
+      border-radius: 20px 20px 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 20px 20px;
     }
   }
 }

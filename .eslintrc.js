@@ -37,6 +37,16 @@ module.exports = {
       },
     ],
     'vue/no-v-html': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+        destructuredArrayIgnorePattern: '^_',
+        ignoreRestSiblings: true,
+      },
+    ],
   },
   overrides: [
     {
