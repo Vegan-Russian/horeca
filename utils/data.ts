@@ -1,6 +1,8 @@
 import { Article } from '~~/types';
+import deserty from './topicsContent/deserty';
 import kakZamenitZhivotnyeProdukty from './topicsContent/kakZamenitZhivotnyeProdukty';
 import osnovnyeBliuda from './topicsContent/osnovnyeBliuda';
+import vypechka from './topicsContent/vypechka';
 import zakuski from './topicsContent/zakuski';
 import zavtraki from './topicsContent/zavtraki';
 
@@ -46,6 +48,7 @@ export const articles: Article[] = [
   {
     id: 'deserty',
     name: 'Десерты',
+    content: deserty,
     images: {
       normal: '/images/guide/main/deserty.webp',
       small: '/images/guide/main/deserty-sm.webp',
@@ -54,6 +57,7 @@ export const articles: Article[] = [
   {
     id: 'vypechka',
     name: 'Выпечка',
+    content: vypechka,
     images: {
       normal: '/images/guide/main/vypechka.webp',
       small: '/images/guide/main/vypechka-sm.webp',
