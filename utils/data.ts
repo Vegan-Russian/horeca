@@ -1,5 +1,6 @@
 import { Article } from '~~/types';
 import kakZamenitZhivotnyeProdukty from './topicsContent/kakZamenitZhivotnyeProdukty';
+import osnovnyeBliuda from './topicsContent/osnovnyeBliuda';
 import zakuski from './topicsContent/zakuski';
 import zavtraki from './topicsContent/zavtraki';
 
@@ -36,6 +37,7 @@ export const articles: Article[] = [
   {
     id: 'osnovnye-bliuda',
     name: 'Основные блюда',
+    content: osnovnyeBliuda,
     images: {
       normal: '/images/guide/main/osnovnye-bliuda.webp',
       small: '/images/guide/main/osnovnye-bliuda-sm.webp',

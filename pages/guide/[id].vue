@@ -25,9 +25,8 @@
                   <li
                     v-for="(listItem, listIdx) in content.content"
                     :key="listIdx"
-                  >
-                    {{ listItem }}
-                  </li>
+                    v-html="listItem"
+                  ></li>
                 </ol>
               </template>
             </div>
@@ -97,13 +96,14 @@ const pageInfo = computed(() => data.value.response);
 
   &__text {
     line-height: 1.42;
-    &::v-deep(a) {
-      color: var(--title-color);
-      text-decoration: underline;
-      text-decoration-skip-ink: none;
-      &:hover {
-        text-decoration: none;
-      }
+  }
+
+  &::v-deep(a) {
+    color: var(--title-color);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    &:hover {
+      text-decoration: none;
     }
   }
 
