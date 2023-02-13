@@ -18,6 +18,8 @@ const deserty: ArticleContent[] = [
   {
     type: 'image',
     content: '/images/guide/deserty/jam.webp',
+    caption:
+      '<a href="https://unsplash.com/@fermtz05" target="_blank">Фото @fermtz05</a>. Источник <a href="https://unsplash.com" target="_blank">Unsplash.</a>',
   },
   {
     type: 'block',
@@ -118,6 +120,8 @@ const deserty: ArticleContent[] = [
   {
     type: 'image',
     content: '/images/guide/deserty/chia-pudding.webp',
+    caption:
+      '<a href="https://unsplash.com/@maryamsicard" target="_blank">Фото @maryamsicard</a>. Источник <a href="https://unsplash.com" target="_blank">Unsplash.</a>',
   },
   {
     type: 'block',

@@ -79,10 +79,10 @@ const pageInfo = computed(() => data.value.response);
 .term {
   padding: 100px;
   border: 1.5px solid #000000;
-  &--first {
+  &:first-of-type {
     border-radius: 40px 40px 0px 0px;
   }
-  &--last {
+  &:last-of-type {
     border-radius: 0px 0px 40px 40px;
   }
 

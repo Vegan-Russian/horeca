@@ -36,7 +36,7 @@ useHead({
 const { data: articles } = await useFetch('/api/articles');
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .page {
   &__search {
     margin-bottom: 120px;
