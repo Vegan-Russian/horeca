@@ -2,7 +2,11 @@
   <div class="page">
     <div class="wrapper">
       <template v-if="data.success">
-        <h1 v-html="pageInfo.name"></h1>
+        <guide-the-search
+          :title="pageInfo.name"
+          :description="pageInfo.description"
+          class="page__search"
+        />
         <template v-for="(item, index) in pageInfo.content" :key="index">
           <article
             v-if="item.type === 'block'"

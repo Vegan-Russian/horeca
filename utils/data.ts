@@ -24,6 +24,8 @@ export const articles: Article[] = [
   },
   {
     id: 'zakuski',
+    description:
+      'Вы узнаете больше об ингредентах в блюдах, как оливки, маслины, хрустящие баклажаны и хумус. Вяленые томаты.',
     name: 'Закуски',
     content: zakuski,
     images: {
@@ -33,6 +35,8 @@ export const articles: Article[] = [
   },
   {
     id: 'zavtraki',
+    description:
+      'Вы узнаете больше об особенностях в блюдах, как арахисовая паста, готовые сухие завтраки, каша быстрого приготовления, тостовый хлеб.',
     name: 'Завтраки',
     content: zavtraki,
     images: {
@@ -43,6 +47,8 @@ export const articles: Article[] = [
   {
     id: 'osnovnye-bliuda',
     name: 'Основные блюда',
+    description:
+      'Вы узнаете больше о таких блюдах, как грибной суп, картофель фри, по-деревенски, квашеная капуста, кимчи капуста, кляр, лапша, макаронные изделия, мисо бульон, ньокки, овощной, грибной бульон, пюре картофельное, рис отварной, сухари панко, темпура кляр, удон, фалафель, чука.',
     content: osnovnyeBliuda,
     images: {
       normal: '/images/guide/main/osnovnye-bliuda.webp',
@@ -52,6 +58,8 @@ export const articles: Article[] = [
   {
     id: 'deserty',
     name: 'Десерты',
+    description:
+      'Вы узнаете об ингредиентах, продуктах и блюдах, как батончики, джем, сиропы и топпинги, сыроедческие десерты (RAW), чиа-пуддинг.',
     content: deserty,
     images: {
       normal: '/images/guide/main/deserty.webp',
@@ -61,6 +69,8 @@ export const articles: Article[] = [
   {
     id: 'vypechka',
     name: 'Выпечка',
+    description:
+      'Вы узнаете больше о булочках для бургеров и хот-догов, хлебе, лаваше; пите, тортилье, о тесте для пиццы и маргарине, спреде.',
     content: vypechka,
     images: {
       normal: '/images/guide/main/vypechka.webp',
@@ -70,6 +80,8 @@ export const articles: Article[] = [
   {
     id: 'pripravy',
     content: pripravy,
+    description:
+      'Вы узнаете больше о васаби, глутамате натрия, пасте карри, пасте том ям, о мисо бульоне, овощном и грибном бульоне, пасте кочудян.',
     name: 'Приправы',
     images: {
       normal: '/images/guide/main/pripravy.webp',
@@ -79,6 +91,8 @@ export const articles: Article[] = [
   {
     id: 'sousy',
     name: 'Соусы',
+    description:
+      'Вы узнаете о соусах, как бальзамический уксус, барбекю (BBQ) соус, горчица, горчичный соус, гуакамоле, кетчуп, томатный соус, карри соус, кимчи соус, майонез, ореховый соус (гомадаре), песто, понзу, ремулад, сифудо, соевый соус, спайси соус, тахини (кунжутный соус), терияки, унаги, хрен, шрирача.',
     content: sousy,
     images: {
       normal: '/images/guide/main/sousy.webp',
@@ -88,6 +102,7 @@ export const articles: Article[] = [
   {
     id: 'komplimenty',
     name: 'Комплименты',
+    description: 'Больше о вариантах комплиментов от кухни.',
     content: komplimenty,
     images: {
       normal: '/images/guide/main/komplimenty.webp',
@@ -96,6 +111,7 @@ export const articles: Article[] = [
   },
   {
     id: 'alkogol',
+    description: 'Вы узнаете о подвохах алкогольной продукции.',
     content: alkogol,
     name: 'Алкоголь',
     images: {

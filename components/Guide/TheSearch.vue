@@ -1,7 +1,7 @@
 <template>
   <section class="guide-search">
     <h1 v-html="title"></h1>
-    <p v-html="description"></p>
+    <p class="guide-search__desc" v-html="description"></p>
     <the-search
       class="guide-search__search"
       :suggested="foundItems"
@@ -51,6 +51,10 @@ const handleChoose = (option: SuggestOption) => {
   &__search {
     max-width: 930px;
     margin-top: 100px;
+  }
+
+  &__desc {
+    max-width: 800px;
   }
 }
 
