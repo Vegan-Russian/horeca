@@ -86,7 +86,7 @@ const pageInfo = computed(() => data.value.response);
   &:first-of-type {
     border-radius: 40px 40px 0px 0px;
   }
-  &:last-of-type {
+  &:last-of-type:not(:first-of-type) {
     border-radius: 0px 0px 40px 40px;
   }
 

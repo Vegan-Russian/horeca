@@ -1,6 +1,8 @@
 import { Article } from '~~/types';
+import alkogol from './topicsContent/alkogol';
 import deserty from './topicsContent/deserty';
 import kakZamenitZhivotnyeProdukty from './topicsContent/kakZamenitZhivotnyeProdukty';
+import komplimenty from './topicsContent/komplimenty';
 import osnovnyeBliuda from './topicsContent/osnovnyeBliuda';
 import pripravy from './topicsContent/pripravy';
 import sousy from './topicsContent/sousy';
@@ -86,6 +88,7 @@ export const articles: Article[] = [
   {
     id: 'komplimenty',
     name: 'Комплименты',
+    content: komplimenty,
     images: {
       normal: '/images/guide/main/komplimenty.webp',
       small: '/images/guide/main/komplimenty-sm.webp',
@@ -93,6 +96,7 @@ export const articles: Article[] = [
   },
   {
     id: 'alkogol',
+    content: alkogol,
     name: 'Алкоголь',
     images: {
       normal: '/images/guide/main/alkogol.webp',
