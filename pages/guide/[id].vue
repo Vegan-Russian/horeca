@@ -4,7 +4,11 @@
       <template v-if="data.success">
         <h1 v-html="pageInfo.name"></h1>
         <template v-for="(item, index) in pageInfo.content" :key="index">
-          <article v-if="item.type === 'block'" class="term page__section">
+          <article
+            v-if="item.type === 'block'"
+            :id="item.id || null"
+            class="term page__section"
+          >
             <div class="term__inner">
               <template
                 v-for="(content, contentIndex) in item.content"

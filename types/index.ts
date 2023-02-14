@@ -1,4 +1,5 @@
 export type TextTypeArticleContent = {
+  id?: string;
   type: 'block';
   content: {
     type: 'title' | 'text' | 'link' | 'list' | 'subtitle';

@@ -3,6 +3,7 @@ import deserty from './topicsContent/deserty';
 import kakZamenitZhivotnyeProdukty from './topicsContent/kakZamenitZhivotnyeProdukty';
 import osnovnyeBliuda from './topicsContent/osnovnyeBliuda';
 import pripravy from './topicsContent/pripravy';
+import sousy from './topicsContent/sousy';
 import vypechka from './topicsContent/vypechka';
 import zakuski from './topicsContent/zakuski';
 import zavtraki from './topicsContent/zavtraki';
@@ -76,6 +77,7 @@ export const articles: Article[] = [
   {
     id: 'sousy',
     name: 'Соусы',
+    content: sousy,
     images: {
       normal: '/images/guide/main/sousy.webp',
       small: '/images/guide/main/sousy-sm.webp',
