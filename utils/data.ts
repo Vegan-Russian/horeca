@@ -2,6 +2,7 @@ import { Article } from '~~/types';
 import deserty from './topicsContent/deserty';
 import kakZamenitZhivotnyeProdukty from './topicsContent/kakZamenitZhivotnyeProdukty';
 import osnovnyeBliuda from './topicsContent/osnovnyeBliuda';
+import pripravy from './topicsContent/pripravy';
 import vypechka from './topicsContent/vypechka';
 import zakuski from './topicsContent/zakuski';
 import zavtraki from './topicsContent/zavtraki';
@@ -65,6 +66,7 @@ export const articles: Article[] = [
   },
   {
     id: 'pripravy',
+    content: pripravy,
     name: 'Приправы',
     images: {
       normal: '/images/guide/main/pripravy.webp',

@@ -1,0 +1,50 @@
+{
+  "block": {
+    "scope": "javascript,typescript",
+    "prefix": "bl",
+    "body": ["{", "\t type: \"block\",", "\t content: [$1]", "},"],
+    "description": "Log output to console"
+  },
+  "photo": {
+    "scope": "javascript,typescript",
+    "prefix": "img",
+    "body": [
+      "{",
+      "\t type: \"image\",",
+      "\t content: '/images/guide/${1:zavtraki}/${2:peanut-butter}.webp',",
+      "\t caption: '<a href=\"https://unsplash.com/@towfiqu999999\" target=\"_blank\">Фото @towfiqu999999</a>. Источник <a href=\"https://unsplash.com\" target=\"_blank\">Unsplash.</a>',",
+      "},"
+    ],
+    "description": "Log output to console"
+  },
+  "title": {
+    "scope": "javascript,typescript",
+    "prefix": "tit",
+    "body": ["{", "\t type: \"title\",", "\t content: '$1'", "},"],
+    "description": "Log output to console"
+  },
+  "subtitle": {
+    "scope": "javascript,typescript",
+    "prefix": "sub",
+    "body": ["{", "\t type: \"subtitle\",", "\t content: '$1'", "},"],
+    "description": "Log output to console"
+  },
+  "list": {
+    "scope": "javascript,typescript",
+    "prefix": "ls",
+    "body": ["{", "\t type: \"list\",", "\t content: [$1]", "},"],
+    "description": "Log output to console"
+  },
+  "text": {
+    "scope": "javascript,typescript",
+    "prefix": "text",
+    "body": ["{", "\t type: \"text\",", "\t content: '$1'", "},"],
+    "description": "Log output to console"
+  },
+  "link": {
+    "scope": "javascript,typescript",
+    "prefix": "lin",
+    "body": ["<a href=\"${0:https://}\" target=\"_blank\">$1</a>"],
+    "description": "Log output to console"
+  }
+}
