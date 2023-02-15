@@ -1,6 +1,6 @@
 <template>
   <section class="guide-search">
-    <h1 v-html="title"></h1>
+    <h1 class="guide-search__title" v-html="title"></h1>
     <p class="guide-search__desc" v-html="description"></p>
     <the-search
       class="guide-search__search"
@@ -55,6 +55,15 @@ const handleChoose = (option: SuggestOption) => {
 
   &__desc {
     max-width: 800px;
+  }
+
+  @include media('sm') {
+    &__search {
+      margin-top: 60px;
+    }
+    &__title {
+      margin-bottom: 40px;
+    }
   }
 }
 

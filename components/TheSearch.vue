@@ -100,6 +100,7 @@ onMounted(() => {
     z-index: 10;
     max-height: 352px;
     overflow-y: auto;
+    background-color: #fff4cd;
 
     scrollbar-width: thin;
     &::-webkit-scrollbar {
@@ -150,21 +151,20 @@ onMounted(() => {
         stroke: #642400;
       }
     }
-  }
+    &__btn {
+      padding-inline: 13px;
+      border-radius: 6px;
+    }
 
-  &__btn {
-    padding-inline: 13px;
-    border-radius: 6px;
-  }
+    &__field {
+      flex-shrink: 1;
+      min-width: 140px;
+    }
 
-  &__field {
-    flex-shrink: 1;
-    min-width: 140px;
-  }
-
-  &__choose-option-btn {
-    padding: 8px 14px;
-    font-size: 16px;
+    &__choose-option-btn {
+      padding: 8px 14px;
+      font-size: 16px;
+    }
   }
 }
 
