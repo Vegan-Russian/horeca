@@ -12,7 +12,7 @@
           <div class="main-page__promo-content">
             <h1>
               Веганские позиции в вашем
-              <span class="accent-part">
+              <span class="accent-part" style="color: #fff">
                 <the-type :texts="accentWords"></the-type
                 ><span class="cursor"></span
               ></span>
@@ -197,7 +197,7 @@ useHead({
   titleTemplate: 'HoReCa - главная страница',
 });
 
-const accentWords = ['ресторане', 'Кафе', 'Отеле'];
+const accentWords = ['ресторане', 'кафе', 'отеле'];
 
 const { data: createMenuRules } = await useAsyncData('rules', () =>
   $fetch('/api/rules'),
@@ -536,20 +536,20 @@ const { data: createMenuRules } = await useAsyncData('rules', () =>
   z-index: -1;
 }
 .cursor {
-  border-right: 4px solid #b87c5a;
+  border-right: 4px solid #fff;
   padding-right: 8px;
   animation: flashin-border 1s step-start infinite;
 }
 
 @keyframes flashin-border {
   0% {
-    border-color: #b87c5a;
+    border-color: #fff;
   }
   50% {
     border-color: transparent;
   }
   100% {
-    border-color: #b87c5a;
+    border-color: #fff;
   }
 }
 
