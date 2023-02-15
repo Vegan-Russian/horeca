@@ -12,7 +12,7 @@
           <div class="main-page__promo-content">
             <h1>
               Веганские позиции в вашем
-              <span class="accent-part" style="color: #fff">
+              <span class="accent-part">
                 <the-type :texts="accentWords"></the-type
                 ><span class="cursor"></span
               ></span>
@@ -331,6 +331,12 @@ const { data: createMenuRules } = await useAsyncData('rules', () =>
       &--content {
         margin-top: 40px;
       }
+    }
+  }
+
+  @include media('sm', 'min') {
+    .accent-part {
+      color: #fff;
     }
   }
 
