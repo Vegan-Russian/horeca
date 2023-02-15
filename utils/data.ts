@@ -1,4 +1,4 @@
-import { Article } from '~~/types';
+import { Article, TextTypeArticleContent } from '~~/types';
 import alkogol from './topicsContent/alkogol';
 import deserty from './topicsContent/deserty';
 import kakZamenitZhivotnyeProdukty from './topicsContent/kakZamenitZhivotnyeProdukty';
@@ -121,30 +121,13 @@ export const articles: Article[] = [
   },
 ];
 
-export const terms = [
-  {
-    id: 'rastitelnoe-moloko',
-    term: 'Растительное молоко',
-    def: 'Это немолоко, сделанный из растительных ингредиентов',
-  },
-  {
-    id: 'rastitelnoe-moloko-2',
-    term: 'Растительное молоко 2',
-    def: 'Это немолоко, сделанный из растительных ингредиентов',
-  },
-  {
-    id: 'rastitelnoe-moloko-3',
-    term: 'Растительное молоко 3',
-    def: 'Это немолоко, сделанный из растительных ингредиентов',
-  },
-  {
-    id: 'rastitelnoe-moloko-4',
-    term: 'Растительное молоко 4',
-    def: 'Это немолоко, сделанный из растительных ингредиентов',
-  },
-  {
-    id: 'rastitelnoe-moloko-5',
-    term: 'Растительное молоко 5',
-    def: 'Это немолоко, сделанный из растительных ингредиентов',
-  },
-];
+export const terms = articles.reduce<
+  { content: TextTypeArticleContent['content'] }[]
+>((acc, article) => {
+  article.content?.forEach((item) => {
+    if (item.type === 'image') return;
+    acc.push({ content: item.content });
+  });
+
+  return acc;
+}, []);

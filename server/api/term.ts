@@ -26,7 +26,7 @@ export default defineEventHandler((event) => {
     .map(({ item }) => item);
 
   return {
-    response: variants.map(({ content }) => content),
-    success: true,
+    response: variants[0],
+    success: !!variants[0],
   };
 });

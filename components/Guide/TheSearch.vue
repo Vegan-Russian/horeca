@@ -31,10 +31,13 @@ const handleSearch = async (text: string) => {
 
   if (data.value?.error) return;
   if (!data.value?.response) return;
-  foundItems.value = data.value.response.map((item) => ({
-    value: item.id,
-    title: item.term,
-  }));
+  foundItems.value = data.value.response.map((item) => {
+    const title = item.find((i) => i.type === 'title')?.content as string;
+    return {
+      value: title ?? '',
+      title: title ?? '',
+    };
+  });
 
   inNothingFound.value = !Boolean(data.value.response.length);
 };
@@ -42,7 +45,7 @@ const handleSearch = async (text: string) => {
 const router = useRouter();
 
 const handleChoose = (option: SuggestOption) => {
-  router.push('/term/' + option.value);
+  router.push({ path: '/term', query: { search: option.value } });
 };
 </script>
 
