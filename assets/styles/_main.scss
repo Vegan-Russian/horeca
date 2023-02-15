@@ -5,7 +5,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+::selection {
+  background-color: #b87c5a;
+  color: #fff;
+}
 html {
   scroll-behavior: smooth;
 }

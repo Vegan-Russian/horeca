@@ -1,13 +1,21 @@
 <template>
   <div>
     <main class="main-page page">
+      <video class="main-page__video" autoplay muted loop>
+        <source src="/video/promo-video.mp4" type="video/mp4" />
+      </video>
+
+      <div class="main-page__video-placeholder hide-for-sm"></div>
       <section class="main-page__promo">
         <div class="main-page__promo-bg" />
         <div class="wrapper">
           <div class="main-page__promo-content">
             <h1>
               Веганские позиции в вашем
-              <span class="accent-part">ресторане</span>
+              <span class="accent-part">
+                <the-type :texts="accentWords"></the-type
+                ><span class="cursor"></span
+              ></span>
             </h1>
             <p>
               Наша цель — сделать так, чтобы веганские опции в кафе и ресторанах
@@ -189,6 +197,8 @@ useHead({
   titleTemplate: 'HoReCa - главная страница',
 });
 
+const accentWords = ['ресторане', 'Кафе', 'Отеле'];
+
 const { data: createMenuRules } = await useAsyncData('rules', () =>
   $fetch('/api/rules'),
 );
@@ -196,20 +206,28 @@ const { data: createMenuRules } = await useAsyncData('rules', () =>
 
 <style lang="scss" scoped>
 .main-page {
+  overflow: hidden;
+  &__video,
+  &__video-placeholder {
+    height: calc(100vh - var(--layout-content-offset));
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &__video {
+    object-fit: cover;
+  }
+  &__video-placeholder {
+    background-color: rgba(#b87c5a, 0.65);
+  }
   &__promo {
-    position: relative;
+    overflow: hidden;
     height: calc(100vh - var(--layout-content-offset));
     display: flex;
     align-items: center;
-    &-bg {
-      background-image: url(~/assets/images/promo.jpg);
-      position: absolute;
-      inset: calc(-1 * var(--layout-content-offset)) 0 0 0;
-      background-size: cover;
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
-
     &-content {
       max-width: 910px;
       h1 {
@@ -399,6 +417,9 @@ const { data: createMenuRules } = await useAsyncData('rules', () =>
         margin-bottom: 0;
       }
     }
+    &__video {
+      display: none;
+    }
   }
 
   @include media('xxs') {
@@ -409,7 +430,7 @@ const { data: createMenuRules } = await useAsyncData('rules', () =>
   @include media('xs') {
     &__section {
       &--content {
-        max-width: 80%;
+        max-width: 100%;
       }
     }
     &__list {
@@ -513,5 +534,28 @@ const { data: createMenuRules } = await useAsyncData('rules', () =>
   position: absolute;
   top: 60%;
   z-index: -1;
+}
+.cursor {
+  border-right: 4px solid #b87c5a;
+  padding-right: 8px;
+  animation: flashin-border 1s step-start infinite;
+}
+
+@keyframes flashin-border {
+  0% {
+    border-color: #b87c5a;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #b87c5a;
+  }
+}
+
+.accent-part {
+  @include media('xxs') {
+    display: block;
+  }
 }
 </style>

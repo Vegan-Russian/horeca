@@ -78,9 +78,30 @@ const handleChoose = (option: SuggestOption) => {
   margin-top: 100px;
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 1em;
     font-size: 40px;
     color: var(--title-color);
+  }
+
+  @include media('sm') {
+    padding: 40px 60px;
+    margin-top: 70px;
+  }
+  @include media('xxs') {
+    margin-top: 40px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    &__title {
+      font-size: 30px;
+    }
+  }
+  @include media('xs') {
+    margin-top: 40px;
+    padding: 20px 24px;
+    border-radius: 16px;
+    &__title {
+      font-size: 24px;
+    }
   }
 }
 </style>
