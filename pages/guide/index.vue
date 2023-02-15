@@ -52,9 +52,6 @@ const { data: articles } = await useFetch('/api/articles');
       display: flex;
       flex-direction: column;
       gap: 20px;
-      padding: 20px;
-      border: 1px dashed #9747ff;
-      border-radius: 5px;
       img {
         display: none;
       }
