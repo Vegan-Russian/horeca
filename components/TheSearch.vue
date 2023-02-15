@@ -127,6 +127,7 @@ onMounted(() => {
     width: 100%;
     text-align: left;
     background-color: #fff4cd;
+    user-select: none;
 
     &:hover {
       background-color: darken(#fff4cd, 10);

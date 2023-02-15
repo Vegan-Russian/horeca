@@ -34,7 +34,11 @@
           </div>
           <div class="card__image-wrapper">
             <img :src="item.image" alt="" class="card__image" />
-            <the-button class="card__btn" bottom-rounded width="100%"
+            <the-button
+              class="card__btn"
+              bottom-rounded
+              width="100%"
+              @click="openPresentation(item.link)"
               >Открыть презентацию</the-button
             >
           </div>
@@ -56,13 +60,12 @@ type SuppliersItems = {
   text: string[];
   image: string;
   reversed?: boolean;
+  link: string;
 };
 
-// const { init } = useLazyLoad();
-
-// onMounted(() => {
-//   init();
-// });
+const openPresentation = (link: string) => {
+  window.open(link);
+};
 
 const items: Array<SuppliersItems | { image: string }> = [
   {
@@ -71,6 +74,7 @@ const items: Array<SuppliersItems | { image: string }> = [
       'Nemoloko — это растительный продукт, он произведен без использования ингредиентов животного происхождения и не содержит лактозу, казеин, трансжиры, холестерин, гормоны роста или остаточное количество антибиотиков.',
     ],
     image: '/images/suppliers/nemoloko.webp',
+    link: 'https://docs.google.com/presentation/d/1IOaJnXhX1MrRLtSNz45yynt4x2eGDy-A/edit?rtpof=true&sd=true',
   },
   {
     title: 'сыр <br /> Vegalize',
@@ -79,6 +83,7 @@ const items: Array<SuppliersItems | { image: string }> = [
       'Сыр отлично плавится, поэтому помимо обычных бутербродов идеально подойдёт для веганской пиццы и лазаньи.',
     ],
     image: '/images/suppliers/vegalize.webp',
+    link: 'https://drive.google.com/file/d/1Sl0DdkM1jrhNAjVAlx7O30GXqc01Hh2l/view?usp=share_link',
   },
   {
     title: 'сырные дрожжи <br /> Nooch',
@@ -86,6 +91,7 @@ const items: Array<SuppliersItems | { image: string }> = [
       'Пищевые неактивные дрожжи часто используют как приправу из-за его пикантного вкуса и пользы для здоровья. Он имеет ореховый, сырный вкус и часто применяется для имитации сыра в веганских блюдах, им загущают соусы и заправки, а также используют как дополнительным источником питательных веществ, так так они является отличным источником белка, витаминов, минералов и антиоксидантов.',
     ],
     image: '/images/suppliers/nooch.webp',
+    link: 'https://drive.google.com/file/d/1kusnEsXNU5SmD22cqsjK_NmsT55YYWYk/view?usp=share_link',
   },
   {
     title: 'мясо <br /> Meatless',
@@ -93,6 +99,7 @@ const items: Array<SuppliersItems | { image: string }> = [
       'Как мясо, только сделано из растений. Производство растительных альтернатив мясу из Петербурга. В ассортименте котлеты, фарш, фрикадельки, сардельки, колбаски и гуляш. Вкусовые профили: мясо, курица, рыба.',
     ],
     image: '/images/suppliers/meatless.webp',
+    link: 'https://drive.google.com/file/d/1dXUDwYhDqAVb35CX4mbx8qkupinzRJXZ/view?usp=share_link',
   },
   {
     title: 'йогурты, <br /> пуддинг 5yes',
@@ -100,6 +107,7 @@ const items: Array<SuppliersItems | { image: string }> = [
       'Растительные аналоги молочных продуктов. В арсенале бренда обычные и питьевые йогурты, пудинги, а также молоко. Йогурты содержат живые лактобактерии. Хорошо впишутся в заведение с направлением ЗОЖ.',
     ],
     image: '/images/suppliers/5yes.webp',
+    link: 'https://drive.google.com/file/d/12_2xX3LHY9-9HJ9uZq-6mO-qFxSd6R84/view?usp=share_link',
   },
   {
     image: '/images/suppliers/demo-1.webp',
@@ -111,6 +119,7 @@ const items: Array<SuppliersItems | { image: string }> = [
     ],
     image: '/images/suppliers/meat-hi.webp',
     reversed: true,
+    link: 'https://drive.google.com/file/d/1eM3mo6zXl-s2T59ezyBPpgnPSI0X1gS1/view?usp=share_link',
   },
   {
     title: 'БАТОНЧИКИ <br /> KICK',
@@ -119,6 +128,7 @@ const items: Array<SuppliersItems | { image: string }> = [
     ],
     image: '/images/suppliers/kick-bars.webp',
     reversed: true,
+    link: 'https://drive.google.com/file/d/1FGy2YOr1CPyLZfNFtrQ7boVOkfbMh9F5/view?usp=share_link',
   },
   {
     title: 'МОЛОЧКА <br /> ICEcRO',
@@ -127,6 +137,7 @@ const items: Array<SuppliersItems | { image: string }> = [
     ],
     image: '/images/suppliers/icecro.webp',
     reversed: true,
+    link: 'https://drive.google.com/file/d/11JMNCkxRsFpsU5nJxh0D2DrAZ8_dMH1w/view?usp=share_link',
   },
   {
     title: 'МЯСО <br /> WELLDONE',
@@ -135,6 +146,7 @@ const items: Array<SuppliersItems | { image: string }> = [
     ],
     image: '/images/suppliers/welldone.webp',
     reversed: true,
+    link: 'https://drive.google.com/file/d/1yQa8brmswxGPErXVB0ZzlNQwB_rl4CCC/view?usp=share_link',
   },
   {
     title: 'тофу <br /> сельский дом',
@@ -143,6 +155,7 @@ const items: Array<SuppliersItems | { image: string }> = [
     ],
     image: '/images/suppliers/tofu-selskij-dom.webp',
     reversed: true,
+    link: 'https://drive.google.com/file/d/1WvKDQwZ1rBjY2xdOnVXV3rSX9B4aY1i2/view?usp=share_link',
   },
   {
     image: '/images/suppliers/demo-2.webp',
@@ -153,11 +166,13 @@ const items: Array<SuppliersItems | { image: string }> = [
       'Помимо стандартных котлет Greenwise производит стрипсы, филе, тунца и джерки (вяленое мясо). Сухие стрипсы – хороший вариант для тех, кто не хочет переживать из-за скоропортящейся продукции. Стрипсы нужно разварить перед началом готовки, а на вкус и по текстуре, они интереснее обычного соевого мяса.',
     ],
     image: '/images/suppliers/greenwise.webp',
+    link: 'https://drive.google.com/file/d/1R1ZtUE7i1ttEiWU4A5nuplg-ltXBFF2G/view?usp=share_link',
   },
   {
     title: 'КОМБУЧА <br /> HQ KOMBUCHA',
     text: ['Один из брендов комбучи, которая подходит веганам.'],
     image: '/images/suppliers/hq-kombucha.webp',
+    link: 'https://drive.google.com/file/d/1hPObsPcKhwgn_dJ2OW8fH8aSZamXiunb/view?usp=share_link',
   },
   {
     title: 'АРАХИСОВАЯ ПАСТА  <br /> “АЗБУКА ПРОДУКТОВ”',
@@ -165,6 +180,7 @@ const items: Array<SuppliersItems | { image: string }> = [
       'Как мы писали, некоторая арахисовая паста может содержать молочный белок. Так что мы добавили производителя точно веганской арахисовой пасты.',
     ],
     image: '/images/suppliers/azbuka-produktov.webp',
+    link: 'https://drive.google.com/file/d/1_dTwI0vhiD0GBpxq4vxcItcLTlcfxYTv/view?usp=share_link',
   },
   {
     title: 'бульоны <br /> easybase',
@@ -172,6 +188,7 @@ const items: Array<SuppliersItems | { image: string }> = [
       'Заменить мясные бульоны можно с помощью одного из продуктов EasyBase. Обратите внимание, что некоторые из них невеганские – содержат молоко.',
     ],
     image: '/images/suppliers/easybase.webp',
+    link: 'https://drive.google.com/file/d/1qEVzIubKWogMBcBIXPREpPN8lmd20zos/view?usp=share_link',
   },
   {
     title: 'рамболь <br /> beanata',
@@ -179,6 +196,7 @@ const items: Array<SuppliersItems | { image: string }> = [
       'Сыры Beanata по своему вкусу и текстуре напоминают рамболь или адыгейский сыр. Из этого сыра получаются отличные сырники.',
     ],
     image: '/images/suppliers/beanata.webp',
+    link: 'https://drive.google.com/file/d/1iulEpIj99PkWgjcS8pvWQK-zRi0Lamzu/view?usp=share_link',
   },
   {
     image: '/images/suppliers/demo-3.webp',
@@ -190,6 +208,7 @@ const items: Array<SuppliersItems | { image: string }> = [
     ],
     image: '/images/suppliers/sousy-hi.webp',
     reversed: true,
+    link: 'https://drive.google.com/file/d/1nwMYDvWDjlIfJ86HH7EWadI5lwdMDF8b/view?usp=share_link',
   },
   {
     title: 'молоко alpro',
@@ -198,6 +217,7 @@ const items: Array<SuppliersItems | { image: string }> = [
     ],
     image: '/images/suppliers/alpro.webp',
     reversed: true,
+    link: 'https://drive.google.com/file/d/1TmP7bHv-23rlMnxqU9XKWmc6WVeiV1m9/view?usp=share_link',
   },
   {
     title: 'мясо, молоко, батончики <br /> Biofoodlab',
@@ -206,6 +226,7 @@ const items: Array<SuppliersItems | { image: string }> = [
     ],
     image: '/images/suppliers/biofoodlab.webp',
     reversed: true,
+    link: 'https://drive.google.com/file/d/1_hXok-tCzrMxhKcX_CEzaPaJH2UzynnO/view?usp=share_link',
   },
 ];
 </script>
