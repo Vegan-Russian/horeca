@@ -6,7 +6,7 @@ const deserty: ArticleContent[] = [
     content: [
       {
         type: 'title',
-        content: 'батончики',
+        content: 'Батончики',
       },
       {
         type: 'text',

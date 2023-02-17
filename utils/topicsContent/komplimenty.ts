@@ -5,7 +5,7 @@ const komplimenty: ArticleContent[] = [
     content: [
       {
         type: 'title',
-        content: 'Комплименты',
+        content: 'Комплименты (комплементы)',
       },
       {
         type: 'text',

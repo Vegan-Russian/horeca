@@ -43,7 +43,7 @@ const kakZamenitZhivotnyeProdukty: ArticleContent[] = [
     content: [
       {
         type: 'title',
-        content: 'рыба',
+        content: 'Рыба',
       },
       {
         type: 'text',
@@ -76,7 +76,7 @@ const kakZamenitZhivotnyeProdukty: ArticleContent[] = [
   {
     type: 'block',
     content: [
-      { type: 'title', content: 'курица' },
+      { type: 'title', content: 'Курица' },
       {
         type: 'text',
         content:
@@ -103,7 +103,7 @@ const kakZamenitZhivotnyeProdukty: ArticleContent[] = [
   {
     type: 'block',
     content: [
-      { type: 'title', content: 'МОЛОКО' },
+      { type: 'title', content: 'Молоко' },
       {
         type: 'text',
         content:
@@ -215,7 +215,7 @@ const kakZamenitZhivotnyeProdukty: ArticleContent[] = [
   {
     type: 'block',
     content: [
-      { type: 'title', content: 'сливочное масло' },
+      { type: 'title', content: 'Сливочное масло' },
       {
         type: 'text',
         content:
@@ -226,7 +226,7 @@ const kakZamenitZhivotnyeProdukty: ArticleContent[] = [
   {
     type: 'block',
     content: [
-      { type: 'title', content: 'сухое растительное молоко' },
+      { type: 'title', content: 'Сухое растительное молоко' },
       {
         type: 'text',
         content:
@@ -247,7 +247,7 @@ const kakZamenitZhivotnyeProdukty: ArticleContent[] = [
   {
     type: 'block',
     content: [
-      { type: 'title', content: 'яйца' },
+      { type: 'title', content: 'Яйца' },
       {
         type: 'text',
         content:
@@ -324,7 +324,7 @@ const kakZamenitZhivotnyeProdukty: ArticleContent[] = [
   {
     type: 'block',
     content: [
-      { type: 'title', content: 'мёд' },
+      { type: 'title', content: 'Мёд' },
       {
         type: 'text',
         content:
@@ -345,7 +345,7 @@ const kakZamenitZhivotnyeProdukty: ArticleContent[] = [
   {
     type: 'block',
     content: [
-      { type: 'title', content: 'желатин' },
+      { type: 'title', content: 'Желатин' },
       {
         type: 'text',
         content:

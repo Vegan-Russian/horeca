@@ -5,7 +5,7 @@ const osnovnyeBliuda: ArticleContent[] = [
     content: [
       {
         type: 'title',
-        content: 'грибной суп',
+        content: 'Грибной суп',
       },
       {
         type: 'text',
