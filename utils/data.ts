@@ -101,8 +101,8 @@ export const articles: Article[] = [
   },
   {
     id: 'komplimenty',
-    name: 'Комплименты',
-    description: 'Больше о вариантах комплиментов от кухни.',
+    name: 'Комплименты (комплементы)',
+    description: 'Больше о вариантах комплементов от кухни.',
     content: komplimenty,
     images: {
       normal: '/images/guide/main/komplimenty.webp',

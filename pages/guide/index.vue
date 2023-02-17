@@ -3,7 +3,7 @@
     <div class="wrapper">
       <guide-the-search
         title="Веганский справочник"
-        description="Наша цель — сделать так, чтобы веганские опции в и ресторанах стали доступнее. <br /> Для этого мы создали справочник ингредиентов."
+        description="Наша цель — сделать так, чтобы веганские опции в кафе и ресторанах стали доступнее. <br /> Для этого мы создали справочник ингредиентов."
         class="page__search"
       />
 
@@ -30,7 +30,7 @@
 </template>
 <script lang="ts" setup>
 useHead({
-  titleTemplate: 'HoReCa - о нас',
+  titleTemplate: 'Справочник',
 });
 
 const { data: articles } = await useFetch('/api/articles');

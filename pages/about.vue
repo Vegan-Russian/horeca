@@ -94,7 +94,7 @@
 </template>
 <script setup>
 useHead({
-  titleTemplate: 'HoReCa - о нас',
+  titleTemplate: 'О нас',
 });
 </script>
 

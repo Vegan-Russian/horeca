@@ -52,7 +52,7 @@
 </template>
 <script lang="ts" setup>
 useHead({
-  titleTemplate: 'HoReCa - о нас',
+  titleTemplate: 'Поставщики',
 });
 
 type SuppliersItems = {
@@ -124,7 +124,7 @@ const items: Array<SuppliersItems | { image: string }> = [
   {
     title: 'БАТОНЧИКИ <br /> KICK',
     text: [
-      'Вкусные батончики, которые идеально впишутся на прилавок или витрину кофейни. Веганские аналоги популярных батончиков: Baunty, Snikers, Picnic и других.',
+      'Вкусные батончики, которые идеально впишутся на прилавок или витрину кофейни. Веганские аналоги популярных батончиков: Bounty, Snickers, Picnic и других.',
     ],
     image: '/images/suppliers/kick-bars.webp',
     reversed: true,
@@ -163,7 +163,7 @@ const items: Array<SuppliersItems | { image: string }> = [
   {
     title: 'МЯСО, РЫБА <br /> GREENWISE',
     text: [
-      'Помимо стандартных котлет Greenwise производит стрипсы, филе, тунца и джерки (вяленое мясо). Сухие стрипсы – хороший вариант для тех, кто не хочет переживать из-за скоропортящейся продукции. Стрипсы нужно разварить перед началом готовки, а на вкус и по текстуре, они интереснее обычного соевого мяса.',
+      'Помимо стандартных котлет Greenwise производит стрипсы, филе, тунца и джерки (вяленое мясо). Сухие стрипсы – хороший вариант для тех, кто не хочет переживать из-за скоропортящейся продукции. Стрипсы нужно разварить перед началом готовки, а на вкус и по текстуре они интереснее обычного соевого мяса.',
     ],
     image: '/images/suppliers/greenwise.webp',
     link: 'https://drive.google.com/file/d/1R1ZtUE7i1ttEiWU4A5nuplg-ltXBFF2G/view?usp=share_link',
