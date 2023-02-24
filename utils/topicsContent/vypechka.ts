@@ -7,12 +7,12 @@ const vypechka: ArticleContent[] = [
       {
         type: 'text',
         content:
-          'См. <a href="https://veganrussian.ru/?query=%7B%22search%22%3A%7B%22isSearching%22%3Atrue%2C%22query%22%3A%22%D1%85%D0%BB%D0%B5%D0%B1%22%2C%22usePrioritySort%22%3Afalse%7D%7D" target="_blank">Хлеб</a>',
+          'См. <a href="https://www.veganhoreca.ru/term?search=%D0%A5%D0%BB%D0%B5%D0%B1" target="_blank">Хлеб</a>',
       },
       {
         type: 'text',
         content:
-          'Веганские булочки: <a href="veganrussian.ru/tag/buns" target="_blank">veganrussian.ru/tag/buns.</a>',
+          'Веганские булочки: <a href="https://veganrussian.ru/tag/buns" target="_blank">veganrussian.ru/tag/buns.</a>',
       },
     ],
   },
@@ -120,7 +120,7 @@ const vypechka: ArticleContent[] = [
       {
         type: 'text',
         content:
-          'См. <a href="https://veganrussian.ru/?query=%7B%22search%22%3A%7B%22isSearching%22%3Atrue%2C%22query%22%3A%22%D0%BC%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D0%BD%22%2C%22usePrioritySort%22%3Afalse%7D%7D" target="blank">Маргарин</a>.',
+          'См. <a href="https://www.veganhoreca.ru/term?search=%D0%A1%D0%BF%D1%80%D0%B5%D0%B4+/+%D0%BC%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D0%BD" target="blank">Маргарин</a>.',
       },
     ],
   },
@@ -148,7 +148,7 @@ const vypechka: ArticleContent[] = [
       {
         type: 'text',
         content:
-          'См. <a href="https://veganrussian.ru/?query=%7B%22search%22%3A%7B%22isSearching%22%3Atrue%2C%22query%22%3A%22%D1%85%D0%BB%D0%B5%D0%B1%22%2C%22usePrioritySort%22%3Afalse%7D%7D" target="blank">Хлеб</a>. Обращайте внимание на ферменты, молоко и пищевые добавки.',
+          'См. <a href="https://www.veganhoreca.ru/term?search=%D0%A5%D0%BB%D0%B5%D0%B1" target="blank">Хлеб</a>. Обращайте внимание на ферменты, молоко и пищевые добавки.',
       },
       { type: 'subtitle', content: 'Совет:' },
       {
@@ -186,7 +186,7 @@ const vypechka: ArticleContent[] = [
       {
         type: 'text',
         content:
-          'См. <a href="https://veganrussian.ru/?query=%7B%22search%22%3A%7B%22isSearching%22%3Atrue%2C%22query%22%3A%22%D0%BC%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D0%BD%22%2C%22usePrioritySort%22%3Afalse%7D%7D" target="blank">Маргарин</a>.',
+          'См. <a href="https://www.veganhoreca.ru/term?search=%D0%A1%D0%BF%D1%80%D0%B5%D0%B4+/+%D0%BC%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D0%BD" target="blank">Маргарин</a>.',
       },
       {
         type: 'text',

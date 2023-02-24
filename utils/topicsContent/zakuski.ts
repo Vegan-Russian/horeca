@@ -30,7 +30,7 @@ const zakuski: ArticleContent[] = [
         ],
       },
       {
-        type: 'text',
+        type: 'subtitle',
         content: 'совет:',
       },
       {

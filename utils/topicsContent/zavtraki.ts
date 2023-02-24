@@ -138,7 +138,7 @@ const zavtraki: ArticleContent[] = [
       {
         type: 'text',
         content:
-          'См. <a href="https://veganrussian.ru/?query=%7B%22search%22%3A%7B%22isSearching%22%3Atrue%2C%22query%22%3A%22%D1%85%D0%BB%D0%B5%D0%B1%22%2C%22usePrioritySort%22%3Afalse%7D%7D" target="_blank">хлеб.</a>',
+          'См. <a href="https://www.veganhoreca.ru/term?search=%D0%A5%D0%BB%D0%B5%D0%B1" target="_blank">Хлеб</a>',
       },
       {
         type: 'subtitle',
