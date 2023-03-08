@@ -222,7 +222,7 @@ const items: Array<SuppliersItems | { image: string }> = [
   {
     title: 'мясо, молоко, батончики <br /> Biofoodlab',
     text: [
-      'Благодаря широкой линейке продуктов, Bite могут пригодится ресторанам, кафе и кофейням.',
+      'Благодаря широкой линейке продуктов, Bite могут пригодиться ресторанам, кафе и кофейням.',
     ],
     image: '/images/suppliers/biofoodlab.webp',
     reversed: true,

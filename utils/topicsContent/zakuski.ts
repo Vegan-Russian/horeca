@@ -142,6 +142,97 @@ const zakuski: ArticleContent[] = [
       },
     ],
   },
+  {
+    type: 'block',
+    content: [
+      {
+        type: 'title',
+        content: 'Маринованные огурцы',
+      },
+      {
+        type: 'text',
+        content: 'Однозначно невеганские ингредиенты:',
+      },
+      {
+        type: 'list',
+        content: [
+          'Мёд. Обычно используют сахар, но для расширения линейки могут добавить и версию с мёдом.',
+        ],
+      },
+      {
+        type: 'subtitle',
+        content: 'Нужно проверить:',
+      },
+      {
+        type: 'text',
+        content:
+            '<a href="https://veganrussian.ru/e270/" target="_blank">Молочная кислота е270</a>. Нужно уточнить, не получена ли она ферментацией лактозы.',
+      },
+      {
+        type: 'subtitle',
+        content: 'Совет:',
+      },
+      {
+        type: 'text',
+        content:
+            'Выбирайте маринованные огурцы с максимально простым составом.',
+      },
+    ],
+  },
+  {
+    type: 'block',
+    content: [
+      {
+        type: 'title',
+        content: 'Соленые огурцы огурцы',
+      },
+      {
+        type: 'subtitle',
+        content: 'Нужно проверить:',
+      },
+      {
+        type: 'text',
+        content:
+            '<a href="https://veganrussian.ru/e270/" target="_blank">Молочная кислота е270</a>. Нужно уточнить, не получена ли она ферментацией лактозы.',
+      },
+      {
+        type: 'subtitle',
+        content: 'Совет:',
+      },
+      {
+        type: 'text',
+        content:
+            'Выбирайте соленые огурцы с максимально простым составом.',
+      },
+    ],
+  },
+  {
+    type: 'block',
+    content: [
+      {
+        type: 'title',
+        content: 'Каперсы',
+      },
+      {
+        type: 'subtitle',
+        content: 'Нужно проверить:',
+      },
+      {
+        type: 'text',
+        content:
+            '<a href="https://veganrussian.ru/e270/" target="_blank">Молочная кислота е270</a>. Нужно уточнить, не получена ли она ферментацией лактозы.',
+      },
+      {
+        type: 'subtitle',
+        content: 'Совет:',
+      },
+      {
+        type: 'text',
+        content:
+            'Выбирайте каперсы с максимально простым составом.',
+      },
+    ],
+  },
 ];
 
 export default zakuski;

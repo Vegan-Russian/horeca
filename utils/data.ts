@@ -102,7 +102,7 @@ export const articles: Article[] = [
   {
     id: 'komplimenty',
     name: 'Комплименты (комплементы)',
-    description: 'Больше о вариантах комплементов от кухни.',
+    description: 'Больше о вариантах комплиментов от кухни.',
     content: komplimenty,
     images: {
       normal: '/images/guide/main/komplimenty.webp',
