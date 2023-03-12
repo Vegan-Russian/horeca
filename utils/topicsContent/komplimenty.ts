@@ -35,7 +35,7 @@ const komplimenty: ArticleContent[] = [
       {
         type: 'text',
         content:
-          '- Порционное печенье Lotus, <br/> - Печенье классическое Oreo,<br/>- Мини шоколад горький Rioba, <br />- Мини шоколад с марципаном RitterSpot',
+          '- Порционное печенье Lotus, <br/> - Печенье классическое Oreo,<br/>- Мини шоколад горький Rioba, <br />- Мини шоколад с марципаном Ritter Sport',
       },
     ],
   },

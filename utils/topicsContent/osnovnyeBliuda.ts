@@ -42,7 +42,7 @@ const osnovnyeBliuda: ArticleContent[] = [
         content: 'Картофель фри / по-деревенски',
       },
       {
-        type: 'text',
+        type: 'subtitle',
         content: 'нужно проверить:',
       },
       {
@@ -88,7 +88,7 @@ const osnovnyeBliuda: ArticleContent[] = [
       {
         type: 'text',
         content:
-          'В идеале подаваемый соус — веганский, но зачастую это не так. Если вы выберете для меню только веганские соусы, то они подойдут всем. Также хорошим тоном будет указать в меню, включен ли в блюдо соус.',
+          'Выбирайте квашеную капусту с простым составом без закваски.',
       },
     ],
   },
@@ -190,7 +190,7 @@ const osnovnyeBliuda: ArticleContent[] = [
         ],
       },
       {
-        type: 'text',
+        type: 'subtitle',
         content: 'Нужно проверить:',
       },
       {

@@ -182,8 +182,8 @@ const sousy: ArticleContent[] = [
       {
         type: 'list',
         content: [
-          'Кокосовое молоко. В малайзийской кухне соус карри содержит лишь кокосовое молоко и специи. Стабилизатора е435, чьё происхождение нужно проверять.',
-          'Усилители вкуса. Чаще всего встречаются е627, е631 и е635, чьё происхождение (животное или нет) нужно проверять у производителя.. О них можно прочесть на <a href="https://veganrussian.ru" target="_blank">veganrussian.ru</a>.',
+          'Кокосовое молоко. Стабилизатор <a href="https://veganrussian.ru/e435/" target="_blank">е435</a> может быть не по вегану. ',
+          'Усилители вкуса. Чаще всего встречаются <a href="https://veganrussian.ru/e627/" target="_blank">е627</a>, <a href="https://veganrussian.ru/e631/" target="_blank">е631</a> и <a href="https://veganrussian.ru/e635/" target="_blank">е635</a>. Они могут быть по вегану и нет.',
         ],
       },
       {
@@ -192,7 +192,7 @@ const sousy: ArticleContent[] = [
       },
       {
         type: 'text',
-        content: 'Соусы на майонезной основе (см. Майонез).',
+        content: 'Соусы на майонезной основе (см. <a href="https://www.veganhoreca.ru/term?search=%D0%9C%D0%B0%D0%B9%D0%BE%D0%BD%D0%B5%D0%B7" target="_blank">Майонез</a>  ()).',
       },
     ],
   },
@@ -416,7 +416,7 @@ const sousy: ArticleContent[] = [
       {
         type: 'text',
         content:
-          'Веганские майонезы можно посмотреть тут <a href="https://veganrussian.ru/tag/mayo" target="_blank">veganrussian.ru/tag/mayo</a> или во вкладе “Поставщики”.',
+          'Веганские майонезы можно посмотреть тут <a href="https://veganrussian.ru/tag/mayo" target="_blank">veganrussian.ru/tag/mayo</a> или во вкладке “Поставщики”.',
       },
     ],
   },
@@ -669,7 +669,7 @@ const sousy: ArticleContent[] = [
       {
         type: 'list',
         content: [
-          'Вино. Речь не о составе, а о технологических процессах — оклейке и фильтрации. Для подробностей см. <a href="/guide/alkogol" target="_blank">Алкоголь</a>;.',
+          'Вино. Речь не о составе, а о технологических процессах — оклейке и фильтрации. Для подробностей см. <a href="/guide/alkogol" target="_blank">Алкоголь</a>.',
           'Усилители вкуса. Чаще всего встречаются е627, е631 и е635, чьё происхождение (животное или нет) нужно проверять у производителя. О них можно прочесть на <a href="https://veganrussian.ru" target="_blank">veganrussian.ru</a>.',
         ],
       },

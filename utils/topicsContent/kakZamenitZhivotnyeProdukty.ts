@@ -160,7 +160,7 @@ const kakZamenitZhivotnyeProdukty: ArticleContent[] = [
       {
         type: 'text',
         content:
-          'Для веганских блюд нельзя использовать сыр из молока животных. Вы можете выбрать из <a href="https://veganrussian.ru/tag/cheese/" target="_blank">многообразия веганских сыров</a>", что сейчас представлены на рынке.',
+          'Для веганских блюд нельзя использовать сыр из молока животных. Вы можете выбрать из <a href="https://veganrussian.ru/tag/cheese/" target="_blank">многообразия веганских сыров</a>, что сейчас представлены на рынке.',
       },
       {
         type: 'text',

@@ -184,7 +184,7 @@ const zakuski: ArticleContent[] = [
     content: [
       {
         type: 'title',
-        content: 'Соленые огурцы огурцы',
+        content: 'Соленые огурцы',
       },
       {
         type: 'subtitle',
