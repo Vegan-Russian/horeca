@@ -192,7 +192,7 @@ const sousy: ArticleContent[] = [
       },
       {
         type: 'text',
-        content: 'Соусы на майонезной основе (см. <a href="https://www.veganhoreca.ru/term?search=%D0%9C%D0%B0%D0%B9%D0%BE%D0%BD%D0%B5%D0%B7" target="_blank">Майонез</a>  ()).',
+        content: 'Соусы на майонезной основе (см. <a href="https://www.veganhoreca.ru/term?search=%D0%9C%D0%B0%D0%B9%D0%BE%D0%BD%D0%B5%D0%B7" target="_blank">Майонез</a>).',
       },
     ],
   },
