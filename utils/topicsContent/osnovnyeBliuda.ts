@@ -150,8 +150,11 @@ const osnovnyeBliuda: ArticleContent[] = [
         content: 'Однозначно невеганские ингредиенты:',
       },
       {
-        type: 'text',
-        content: 'Яйцо.',
+        type: 'list',
+        content: [
+            'Яйцо.',
+            'Хондаши. Скорее встречается в азиатских блюдах и делается из рыбы.',
+        ]
       },
       {
         type: 'subtitle',

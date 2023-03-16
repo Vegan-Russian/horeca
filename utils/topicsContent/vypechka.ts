@@ -224,6 +224,20 @@ const vypechka: ArticleContent[] = [
       },
     ],
   },
+  {
+    type: 'block',
+    content: [
+      { type: 'title', content: 'Бао булочки' },
+      { type: 'subtitle', content: 'Однозначно невеганские ингредиенты:' },
+      { type: 'text', content: 'Коровье молоко' },
+      { type: 'subtitle', content: 'Совет:' },
+      {
+        type: 'text',
+        content:
+            'Выбирайте булочки с простым составом. Например: пшеничная мука, вода, сахар, растительное масло, дрожжи.',
+      },
+    ],
+  },
 ];
 
 export default vypechka;
