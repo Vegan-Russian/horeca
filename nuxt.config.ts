@@ -27,7 +27,7 @@ export default defineNuxtConfig({
       }],
       noscript: [{
         children: YM_NOSCRIPT,
-      }]
+      }],
     },
     pageTransition: { name: 'page', mode: 'out-in' },
   },
