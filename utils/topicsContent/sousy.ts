@@ -32,7 +32,10 @@ const sousy: ArticleContent[] = [
       },
       {
         type: 'list',
-        content: ['Яичные продукты. Например, сухой яичный желток.'],
+        content: [
+          'Яичные продукты. Например, сухой яичный желток.',
+          'Мёд. Например, мы встретили медовый порошок в соусе <a href="https://kdvonline.ru/product/cous-avstraliyskiy-barbekyu-26383" target="_blank">Calve</a>.',
+        ],
       },
       {
         type: 'subtitle',
@@ -710,6 +713,7 @@ const sousy: ArticleContent[] = [
           'Пчелиный мёд.',
           'Краситель кармин (е120).',
           'Экстракт бонито (рыба).',
+          'Угорь (рыба).',
         ],
       },
       {
