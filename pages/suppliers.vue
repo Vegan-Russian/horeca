@@ -191,12 +191,12 @@ const items: Array<SuppliersItems | { image: string }> = [
     link: 'https://drive.google.com/file/d/1qEVzIubKWogMBcBIXPREpPN8lmd20zos/view?usp=share_link',
   },
   {
-    title: 'рамболь <br /> beanata',
+    title: 'мороженое <br /> Chill Paws',
     text: [
-      'Сыры Beanata по своему вкусу и текстуре напоминают рамболь или адыгейский сыр. Из этого сыра получаются отличные сырники.',
+      'Натуральное веганское мороженое Chill Paws на основе растительных сливок без сахара, без лактозы, без глютена.',
     ],
-    image: '/images/suppliers/beanata.webp',
-    link: 'https://drive.google.com/file/d/1iulEpIj99PkWgjcS8pvWQK-zRi0Lamzu/view?usp=share_link',
+    image: '/images/suppliers/Chill Paws ice cream.jpg',
+    link: 'https://drive.google.com/file/d/1_GxZFRUh0kRhTDNq0Pl9sHh806BEP3Ex/view?usp=drive_link',
   },
   {
     image: '/images/suppliers/demo-3.webp',
