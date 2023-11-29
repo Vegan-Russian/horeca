@@ -196,7 +196,7 @@ const items: Array<SuppliersItems | { image: string }> = [
       'Натуральное веганское мороженое Chill Paws на основе растительных сливок без сахара, без лактозы, без глютена.',
     ],
     image: '/images/suppliers/Chill Paws ice cream.jpg',
-    link: 'https://drive.google.com/file/d/1_GxZFRUh0kRhTDNq0Pl9sHh806BEP3Ex/view?usp=drive_link',
+    link: 'https://drive.google.com/file/d/1_GxZFRUh0kRhTDNq0Pl9sHh806BEP3Ex/view?usp=share_link',
   },
   {
     image: '/images/suppliers/demo-3.webp',
