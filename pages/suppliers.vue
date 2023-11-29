@@ -228,6 +228,24 @@ const items: Array<SuppliersItems | { image: string }> = [
     reversed: true,
     link: 'https://drive.google.com/file/d/1_hXok-tCzrMxhKcX_CEzaPaJH2UzynnO/view?usp=share_link',
   },
+  {
+    title:'Колбаса и сосиски <br /> Высший вкус',
+    text: [
+      'Цель компании — помочь как можно большему количеству людей отказаться от мяса или сократить его потребление. Поэтому «Высший вкус» производит колбасы, сосиски, паштеты и «куриный» сейтан, вкус и текстура которых неотличимы от мясных изделий. Продукты не теряют ни форму, ни консистенцию от термообработки.'
+    ],
+    image: '/images/suppliers/high taste.webp',
+    reversed: true,
+    link:'https://drive.google.com/file/d/1RkZ6ZQoGHWs59d1nStnWs76Mjz9JPdMi/view?usp=share_link',
+  },
+  // {
+  //   title:'',
+  //   text: [
+  //     'Цель компании — помочь как можно большему количеству людей отказаться от мяса или сократить его потребление. Поэтому «Высший вкус» производит колбасы, сосиски, паштеты и «куриный» сейтан, вкус и текстура которых неотличимы от мясных изделий. Продукты не теряют ни форму, ни консистенцию от термообработки.'
+  //   ],
+  //   image: '/images/suppliers/high taste.webp',
+  //   reversed: true,
+  //   link:'',
+  // },
 ];
 </script>
 
