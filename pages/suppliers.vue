@@ -199,6 +199,14 @@ const items: Array<SuppliersItems | { image: string }> = [
     link: 'https://drive.google.com/file/d/1_GxZFRUh0kRhTDNq0Pl9sHh806BEP3Ex/view?usp=share_link',
   },
   {
+    title: '“Зелёная мануфактура”',
+    text: [
+      'Фалафель и полуфабрикаты из растительного сырья: котлеты, биточки, пельмени, чебуреки, драники.',
+    ],
+    image: '/images/suppliers/manufactura.jpg',
+    link: 'https://drive.google.com/file/d/1zTLvyZ_ImSEexpBDueYqMhe_dtmTHM45/view',
+  },
+  {
     image: '/images/suppliers/demo-3.webp',
   },
   {
