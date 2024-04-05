@@ -29,6 +29,11 @@
   overflow: visible;
 }
 
+@include media('mmd', 'min') {
+  .show-for-mmd {
+    display: none !important;
+  }
+}
 @include media('md', 'min') {
   .show-for-md {
     display: none !important;

@@ -23,7 +23,7 @@
       </nav>
       <button
         type="button"
-        class="burger show-for-md"
+        class="burger show-for-mmd"
         :class="{ active: isMenuActive }"
         @click="isMenuActive = !isMenuActive"
       >
@@ -41,6 +41,7 @@ const menuItems = [
   { link: '/suppliers', text: 'Поставщики' },
   { link: '/about', text: 'О нас' },
   { link: '/contacts', text: 'Контакты' },
+  { link: '/recipes', text: 'Рецепты' },
 ];
 
 const isMenuActive = ref(false);
@@ -104,7 +105,7 @@ watch(isMenuActive, () => {
       color: var(--title-color);
     }
   }
-  @include media('md') {
+  @include media('mmd') {
     &__logo-link {
       position: relative;
       z-index: 10;
